@@ -24,6 +24,14 @@
 
 ![CI/CD](https://img.shields.io/badge/CI/CD-Passing-brightgreen)
 
+![Python](https://img.shields.io/badge/python-v3.11+-brightgreen.svg)  
+![GitHub contributors](https://img.shields.io/github/contributors/amit-99/SE_Project3)
+![GitHub issues](https://img.shields.io/github/issues/amit-99/SE_Project3)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/amit-99/SE_Project3)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/amit-99/SE_Project3)](https://github.com/amit-99/SE_Project3)  
+![GitHub language count](https://img.shields.io/github/languages/count/amit-99/SE_Project3)
+![Lines of code](https://tokei.rs/b1/github/amit-99/SE_Project3)
+
 
 
 
