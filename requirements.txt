@@ -48,3 +48,5 @@ textblob~=0.17.1
 torch~=2.1.0
 transformers~=4.34.1
 Pillow~=9.3.0
+pylint==3.0.1
+pytest==7.4.2
