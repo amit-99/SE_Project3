@@ -1,13 +1,27 @@
-# SE Project 2
+# C.E.L.T: The Sentimental Analyser
+## Software Engineering Project for CSC 510
 
-# C.E.L.T: The Sentimental Analyser is now C.E.L.T Pro! 
+[![DOI](https://zenodo.org/badge/295188611.svg)](https://zenodo.org/badge/latestdoi/295188611)
+[![GitHub Release](https://img.shields.io/github/release/amit-99/SE_Project3)](https://github.com/amit-99/SE_Project3/releases)
+![Build](https://github.com/amit-99/SE_Project3/actions/workflows/main.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![Python](https://img.shields.io/badge/python-v3.11+-brightgreen.svg)  
+![GitHub contributors](https://img.shields.io/github/contributors/amit-99/SE_Project3)
+![GitHub issues](https://img.shields.io/github/issues/amit-99/SE_Project3)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/amit-99/SE_Project3)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/amit-99/SE_Project3)](https://github.com/amit-99/SE_Project3)  
+![GitHub language count](https://img.shields.io/github/languages/count/amit-99/SE_Project3)
+![Lines of code](https://tokei.rs/b1/github/amit-99/SE_Project3)
+[![GitHub-size](https://img.shields.io/github/languages/code-size/amit-99/SE_Project3)](https://github.com/amit-99/SE_Project3)
+[![codecov](https://codecov.io/gh/lyonva/ClassMateBot/branch/master/graph/badge.svg)](https://app.codecov.io/gh/amit-99/SE_Project2)
+[![codecov](https://codecov.io/gh/usmanwardag/dollar_bot/branch/main/graph/badge.svg?token=PYAWX95R67)](https://codecov.io/gh/usmanwardag/dollar_bot)
 
 ![](celt.gif)
 
 ## Watch how our application works: 
 
 [Youtube Video](https://youtu.be/V_F8zJv_IIg) <br>
-
+old badges
 [![DOI](https://zenodo.org/badge/295188611.svg)](https://zenodo.org/badge/latestdoi/295188611)
 
 [![Build Status](https://travis-ci.org/karthikmp5/C.E.L.T_pro.svg?branch=master)](https://travis-ci.org/karthikmp5/C.E.L.T_pro)
