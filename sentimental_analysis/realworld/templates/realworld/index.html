@@ -1,166 +1,416 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;">
-{% load static %}
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="{% static "css/nicepage.css" %}" media="screen">
-    <link rel="stylesheet" href="{% static "css/Page-1.css" %}" media="screen">
-    <script class="u-script" src="{% static "js/jquery.js" %}" type="text/javascript" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{% static "js/nicepage.js" %}" defer=""></script>
-    <meta name="generator" content="Nicepage 2.28.1, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Site1",
-		"url": "index.html"
-}</script>
-    <meta property="og:title" content="Page 1">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
-    <meta property="og:url" content="index.html">
-  </head>
-  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body">
-    <header class="u-align-center-sm u-align-center-xs u-clearfix u-gradient u-header u-header" id="sec-0ea5">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 1rem;">
-            <a class="u-button-style u-nav-link u-text-black" href="#">
-              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
-              </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'product analysis' %}" style="padding: 10px 64px;">Product Review</a>
-              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'input' %}" style="padding: 10px 64px;">Document</a>
-              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'text analysis' %}" style="padding: 10px 64px;">Text</a>
-              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'audio analysis' %}" style="padding: 10px 64px;">Audio</a>
-              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'tweet analysis' %}" style="padding: 10px 64px;">Tweet</a>
-              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'image analysis' %}" style="padding: 10px 64px;">Image</a>
-              </li>
-            </ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link"  href="{% url 'product analysis' %}" style="padding: 10px 64px;">Product Review</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'input' %}" style="padding: 10px 64px;">Document</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'text analysis' %}" style="padding: 10px 64px;">Text</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'audio analysis' %}" style="padding: 10px 64px;">Audio</a></li></ul>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'tweet analysis' %}" style="padding: 10px 64px;">Tweet</a></li></ul>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'image analysis' %}" style="padding: 10px 64px;">Image</a></li></ul>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-        <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-2">
-          <div class="menu-collapse" style="font-size: 1rem;">
-            <a class="u-button-style u-nav-link" href="#">
-              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
-</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'analysis' %}" style="padding: 10px 10px;">Home</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'analysis' %}" style="padding: 10px 10px;">Home</a>
-</li></ul>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-      </div></header>
-    <section class="u-clearfix u-image u-section-1" id="carousel_5990" data-image-width="1000" data-image-height="750">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <img src="{% static "images/c2d8d751435d17546c6dcd8f5da95afb.png"%}" alt="" class="u-image u-image-contain u-image-default u-image-1">
-        <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-1">
-          <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-middle-xs">
-            <h1 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-title u-text-1">Sentiment Analysis</h1>
-            <p class="u-align-center u-text u-text-body-alt-color u-text-2">Have you Ever wondered what sentiments are behind the reviews on amazon or maybe what some says or what someone writes. Here we have created an elegant solution to such queries by having analysis of these sentiments from the given input</p>
-            <div class="u-border-10 u-border-palette-1-base u-line u-line-horizontal u-line-1"></div>
-          </div>
-        </div>
+<html>
+   {% load static %}
+   <head lang="en">
+      <meta charset="UTF-8">
+      <title>C.E.L.T</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+      <link rel="shortcut icon" href="{% static "images/favicon-black.ico" %}" title="Favicon"/>
+      <link rel="stylesheet" href="{% static "css/style.css" %}">
+      <link rel="stylesheet" href="{% static "css/namari-color.css" %}">
+      <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"">
+      <link href="{% static "css/animate.css" %}" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   </head>
+   <body>
+      <style>
+         .form-label {
+         display: block;
+         font-weight: bold;
+         margin-bottom: 10px;
+         text-align: left;
+         }
+         .line-edit {
+         width: 100%;
+         padding: 10px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         margin-bottom: 0px;
+         margin-right: 4px;
+         }
+         .hidden {
+         display: none;
+         }
+         .drop-container {
+         position: relative;
+         display: flex;
+         gap: 10px;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 160px;
+         padding: 20px;
+         border-radius: 10px;
+         border: 2px dashed #555;
+         color: #444;
+         cursor: pointer;
+         transition: background .2s ease-in-out, border .2s ease-in-out;
+         }
+         .drop-container:hover {
+         background: #eee;
+         border-color: #111;
+         }
+         .drop-container:hover .drop-title {
+         color: #222;
+         }
+         .drop-title {
+         color: #444;
+         font-size: 20px;
+         font-weight: bold;
+         text-align: center;
+         transition: color .2s ease-in-out;
+         }
+      </style>
+      <div id="preloader">
+         <div id="status" class="la-ball-triangle-path">
+            <div></div>
+            <div></div>
+            <div></div>
+         </div>
       </div>
-    </section>
-    <section class="u-clearfix u-image u-section-2" id="carousel_21be">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-15 u-size-20-md u-layout-cell-1">
-                <div class="u-container-layout u-valign-middle-sm">
-                  <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-1">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="{% url 'product analysis' %}">Product Analysis</a>
-                  </h2>
-                  <p class="u-align-center u-text u-text-body-alt-color u-text-2">Want to find the sentiment behind amazon products</p>
-                </div>
-              </div>
-              <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-15 u-size-20-md u-layout-cell-2">
-                <div class="u-container-layout u-valign-middle-sm">
-                  <h2 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-3">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" href="{% url 'input' %}">Document Analysis</a>
-                  </h2>
-                  <p class="u-align-center u-text u-text-body-alt-color u-text-4">Want to analyse a document like PDF or word for the sentiments in them</p>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-3">
-                <div class="u-container-layout">
-                  <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-5">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3" href="{% url 'text analysis' %}">Text Analysis</a>
-                  </h2>
-                  <p class="u-align-center u-text u-text-body-alt-color u-text-6">Want to analyse simple text and find the sentiments</p>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-size-20-md u-layout-cell-4">
-                <div class="u-container-layout">
-                  <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-7">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4" href="{% url 'audio analysis' %}">Audio Analysis</a>
-                  </h2>
-                  <p class="u-text u-text-body-alt-color u-text-8">Want to analyse audio files and understand the sentiments of the speaker&nbsp;</p>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-size-20-md u-layout-cell-5">
-                <div class="u-container-layout">
-                  <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-7">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4" href="{% url 'tweet analysis' %}">Tweet Analysis</a>
-                  </h2>
-                  <p class="u-text u-text-body-alt-color u-text-8">Came across a tweet that you want to analyse and understand the sentiment&nbsp;</p>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-size-20-md u-layout-cell-6">
-                <div class="u-container-layout">
-                  <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-7">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4" href="{% url 'image analysis' %}">Image Analysis</a>
-                  </h2>
-                  <p class="u-text u-text-body-alt-color u-text-8">Came across an image that you want to analyse and understand the sentiment&nbsp;</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+         <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+         <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+         <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+         <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
       </div>
-    </section>
-    
-    
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-76e1"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">(C) <a href="https://github.com/mrpudlo/SE_Project1" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Github</a>
-        </p>
-      </div></footer>
-  </body>
+      <div id="wrapper">
+         <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+            <div id="header" class="nav-collapse">
+               <div class="row clearfix">
+                  <div class="col-1">
+                     <div id="logo">
+                        <img src="{% static "images/logo.png" %}" id="banner-logo" alt="Landing Page"/>
+                        <img src="{% static "images/logo-2.png" %}" id="navigation-logo" alt="Landing Page"/>
+                     </div>
+                     <aside>
+                        <ul class="social-icons">
+                           <li>
+                              <a target="_blank" title="YouTube" href="#" class="video" data-videoid="VLoJCemCdHg" data-videosite="youtube">
+                              <i class="fa fa-play fa-1x"></i><span>YouTube</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a target="_blank" title="Github" href="https://github.com/amit-99/SE_Project2/">
+                              <i class="fab fa-github fa-1x"></i><span>Github</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </aside>
+                     <div id="nav-trigger"><span></span></div>
+                     <nav id="nav-mobile"></nav>
+                  </div>
+               </div>
+            </div>
+            <div id="banner-content" class="row clearfix">
+               <div class="col-38">
+                  <div class="section-heading">
+                     <h1>Sentiment Analysis</h1>
+                     <h2><br>Have you ever wondered what sentiments are behind the reviews on amazon or maybe what some says or what someone writes. Here we have created an elegant solution to such queries by having analysis of these sentiments from the given input. <br><br> Try our app. It takes all types of inputs: audio, text, pdfs, live speech, amazon url & news topics.</h2>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <main id="content">
+            <section id="about" class="introduction scrollto">
+               <div class="row clearfix">
+                  <div class="col-3">
+                     <div class="section-heading">
+                        <h2 class="section-title">About our project</h2>
+                        <p class="section-subtitle">C.E.L.T provides different online tools to cater to any sentinmental analysis needs. C.E.L.T uses a powerful sentimental analyzer which is efficient and accurate.</p>
+                     </div>
+                  </div>
+                  <div class="col-2-3">
+                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="icon">
+                           <i class="fa fa-mobile fa-2x"></i>
+                        </div>
+                        <div class="icon-block-description">
+                           <h4>Product Analysis</h4>
+                           <p>Need feedback for an Amazon product? Just paste the URL and C.E.L.T will analyze all the comments.</p>
+                        </div>
+                     </div>
+                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="icon">
+                           <i class="fa-regular fa-newspaper fa-2x"></i>
+                        </div>
+                        <div class="icon-block-description">
+                           <h4>News Analysis</h4>
+                           <p>Want to know a sentiment of the news? Just type the news topic and C.E.L.T will analyze the news.</p>
+                        </div>
+                     </div>
+                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="icon">
+                           <i class="fa fa-file fa-2x"></i>
+                        </div>
+                        <div class="icon-block-description">
+                           <h4>Document Analysis</h4>
+                           <p>Upload a pdf or docx file and C.E.L.T. will analyze the text in it and report back the sentiments.</p>
+                        </div>
+                     </div>
+                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="icon">
+                           <i class="fa fa-font fa-2x"></i>
+                        </div>
+                        <div class="icon-block-description">
+                           <h4>Text Analysis</h4>
+                           <p>Type the text you want to analyze and C.E.L.T. will report back the sentiments.</p>
+                        </div>
+                     </div>
+                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="icon">
+                           <i class="fa fa-headphones fa-2x"></i>
+                        </div>
+                        <div class="icon-block-description">
+                           <h4>Audio Analysis</h4>
+                           <p>Upload an audio file and C.E.L.T. will analyze the audio and report back the sentiments.</p>
+                        </div>
+                     </div>
+                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="icon">
+                           <i class="fa-solid fa-microphone fa-2x"></i>
+                        </div>
+                        <div class="icon-block-description">
+                           <h4>Live Speech Analysis</h4>
+                           <p>Record a live speech and C.E.L.T. will analyze a live speech and report back the sentiments.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="gallery" class="scrollto clearfix">
+               <div class="row no-padding-bottom clearfix">
+                  <div class="col-1">
+                     <div class="section-heading">
+                        <h2 class="section-title">Product Analysis</h2>
+                        <form action = "{% url "product analysis" %}" method = "post">
+                        {% csrf_token %}
+                        <label for="blogname" class="form-label">Paste Amazon URL:</label>
+                        <input type="text" id="blogname" class="line-edit" name="blogname" required>
+                        <button type="submit" id = "myButton"class="button">Analyze</button>
+                        <div id="message" class="hidden">Wait till the results are generated.</div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="clients" class="scrollto clearfix">
+               <div class="row no-padding-bottom clearfix">
+                  <div class="col-1" style="padding-left: 0px;">
+                     <div class="section-heading">
+                        <h2 class="section-title">Image Analysis</h2>
+                        <form action = "{% url "image analysis" %}" method = "post" enctype="multipart/form-data">
+                        {% csrf_token %}    
+                        <label for="imageFile" class="drop-container" id="dropcontainer">
+                        <span class="drop-title">Drop image file here</span>
+                        or
+                        <input type="file" id="imageFile" name="imageFile" accept="image/jpeg, image/png" required>
+                        </label>
+                        <button type="submit" id = "myButton" class="button">Analyze</button>
+                        <div id="message" class="hidden">Wait till the results are generated</div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="gallery" class="scrollto clearfix">
+               <div class="row no-padding-bottom clearfix">
+                  <div class="col-1">
+                     <div class="section-heading">
+                        <h2 class="section-title">News Analysis</h2>
+                        <form action = "{% url "news analysis" %}" method = "post">
+                        {% csrf_token %}
+                        <label for="blogname" class="form-label">Topic Name:</label>
+                        <input type="text" id="topicname" class="line-edit" name="topicname" required>
+                        <button type="submit" id="topicButton" class="button">Analyze</button>
+                        <div id="message" class="hidden">Wait till the results are generated.</div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="services" class="scrollto clearfix">
+               <div class="row no-padding-bottom clearfix">
+                  <div class="col-1" style="padding-left: 0px;">
+                     <div class="section-heading">
+                        <h2 class="section-title">Document Analysis</h2>
+                        <form action = "{% url "input" %}" method = "post" enctype="multipart/form-data">
+                        {% csrf_token %}    
+                        <label for="text" class="drop-container" id="dropcontainer">
+                        <span class="drop-title">Drop files here</span>
+                        or
+                        <input type="file" id="file" name="document" accept="text/plain" required>
+                        </label>
+                        <button type="submit" id = "myButton"class="button">Analyze</button>
+                        <div id="message" class="hidden">Wait till the results are generated</div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="testimonials" class="scrollto clearfix">
+               <div class="row no-padding-bottom clearfix">
+                  <div class="col-1" style="padding-left: 0px;">
+                     <div class="section-heading">
+                        <h2 class="section-title">Text Analysis</h2>
+                        <form action = "{% url "text analysis" %}" method = "post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <label for="textField" class="form-label">Write here:</label>
+                        <input type="textField" id="text" class="line-edit" name="textField" required>
+                        <button type="submit" id ="myButton2"class="button">Analyze</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="clients" class="scrollto clearfix">
+               <div class="row no-padding-bottom clearfix">
+                  <div class="col-1" style="padding-left: 0px;">
+                     <div class="section-heading">
+                        <h2 class="section-title">Audio Analysis</h2>
+                        <form action = "{% url "audio analysis" %}" method = "post" enctype="multipart/form-data">
+                        {% csrf_token %}    
+                        <label for="audio" class="drop-container" id="dropcontainer">
+                        <span class="drop-title">Drop audio file here</span>
+                        or
+                        <input type="file" id="file" name="audioFile" accept="audio/mpeg, audio/wav, audio/ogg" required>
+                        </label>
+                        <button type="submit" id = "myButton" class="button">Analyze</button>
+                        <div id="message" class="hidden">Wait till the results are generated</div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="pricing" class="scrollto clearfix">
+               <div class="row no-padding-bottom clearfix">
+                  <div class="col-1" style="padding-left: 0px;">
+                     <div class="section-heading">
+                        <h2 class="section-title">Live Speech Analysis</h2>
+                        <form action = "{% url "live speech analysis" %}" method = "post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input type="file" name="liveaudioFile" accept="audio/*" capture="microphone" id="audio-input" style="display: none">
+                        <h4> <label id="labelForRecording"></label></h4>
+                        <button type="button" id="recordButton" class="button">Start Recording</button>
+                        <button type="submit" id = "submitButton" class="button">Analyze</button>
+                        <!-- <button type="button" id="stop-button" style="display: none;">Stop Recording</button> -->
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <footer id="landing-footer" class="clearfix">
+            <div class="row clearfix">
+               <p id="copyright" class="col-2">Developed by <a href="https://github.com/amit-99/SE_Project2/">Team 57</a></p>
+            </div>
+         </footer>
+      </div>
+      <script src="{% static "js/jquery.1.8.3.min.js" %}"></script>
+      <script src="{% static "js/wow.min.js" %}"></script>
+      <script src="{% static "js/featherlight.min.js" %}"></script>
+      <script src="{% static "js/featherlight.gallery.min.js" %}"></script>
+      <script src="{% static "js/jquery.enllax.min.js" %}"></script>
+      <script src="{% static "js/jquery.scrollUp.min.js" %}"></script>
+      <script src="{% static "js/jquery.easing.min.js" %}"></script>
+      <script src="{% static "js/jquery.stickyNavbar.min.js" %}"></script>
+      <script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+      <script src="{% static "js/images-loaded.min.js" %}"></script>
+      <script src="{% static "js/lightbox.min.js" %}"></script>
+      <script src="{% static "js/site.js" %}"></script>
+      <script>
+         document.getElementById('myButton').addEventListener('click', function() {
+         
+             var messageDiv = document.getElementById('message');
+             messageDiv.style.display = 'block';
+             setTimeout(function() {
+                 messageDiv.style.display = 'none';
+             }, 10000);
+         });
+         
+         const dropContainer = document.getElementById("dropcontainer")
+         const fileInput = document.getElementById("file")
+         
+         dropContainer.addEventListener("dragover", (e) => {
+             // prevent default to allow drop
+             e.preventDefault()
+         }, false)
+         
+         dropContainer.addEventListener("dragenter", () => {
+             dropContainer.classList.add("drag-active")
+         })
+         
+         dropContainer.addEventListener("dragleave", () => {
+             dropContainer.classList.remove("drag-active")
+         })
+         
+         dropContainer.addEventListener("drop", (e) => {
+             e.preventDefault()
+             dropContainer.classList.remove("drag-active")
+             fileInput.files = e.dataTransfer.files
+         })
+         
+         let mediaRecorder;
+         const audioChunks = [];
+         var label = document.getElementById('labelForRecording')
+         document.getElementById('recordButton').addEventListener('click', async () => {
+             if (recordButton.textContent === 'Start Recording') {
+                 try {
+                     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                     mediaRecorder = new MediaRecorder(stream);
+         
+                     mediaRecorder.ondataavailable = (event) => {
+                         if (event.data.size > 0) {
+                             audioChunks.push(event.data);
+                         }
+                     };
+         
+                     mediaRecorder.onstop = () => {
+                         const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                         sendDataToDjango(audioBlob);
+                     };
+         
+                     mediaRecorder.start();
+                     label.textContent = "Recording has started."
+                     recordButton.textContent = 'Stop Recording';
+                 } catch (error) {
+                     console.error('Error accessing microphone:', error);
+                 }
+             } else {
+                 audioChunks.length = 0;
+                 label.textContent = "Recording is completed. Kindly, press analyze to do sentimental analysis"
+                 mediaRecorder.stop();
+                 recordButton.textContent = 'Start Recording';
+             }
+         });
+         let count = 1;
+         function sendDataToDjango(audioBlob) {
+             const formData = new FormData();
+             const filename = `${count}.wav`;
+             formData.append('liveaudioFile', audioBlob, filename);
+         
+             fetch('/recordAudio/', {
+                 method: 'POST',
+                 body: formData,
+             })
+             .then(response => {
+                 if (response.status === 200) {
+                     console.log('Audio sent to Django successfully.');
+                 } else {
+                     console.error('Failed to send audio to Django.');
+                     // Handle error
+                 }
+             })
+             .catch(error => {
+                 console.error('Error sending audio to Django:', error);
+             });
+         
+             count++;
+         }
+         
+      </script>
+   </body>
 </html>
