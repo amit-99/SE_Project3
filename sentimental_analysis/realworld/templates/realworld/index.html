@@ -1,166 +1,408 @@
-<!DOCTYPE html>
-<html style="font-size: 16px;">
-{% load static %}
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="{% static "css/nicepage.css" %}" media="screen">
-    <link rel="stylesheet" href="{% static "css/Page-1.css" %}" media="screen">
-    <script class="u-script" src="{% static "js/jquery.js" %}" type="text/javascript" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{% static "js/nicepage.js" %}" defer=""></script>
-    <meta name="generator" content="Nicepage 2.28.1, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Site1",
-		"url": "index.html"
-}</script>
-    <meta property="og:title" content="Page 1">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
-    <meta property="og:url" content="index.html">
-  </head>
-  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body">
-    <header class="u-align-center-sm u-align-center-xs u-clearfix u-gradient u-header u-header" id="sec-0ea5">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 1rem;">
-            <a class="u-button-style u-nav-link u-text-black" href="#">
-              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
-              </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'product analysis' %}" style="padding: 10px 64px;">Product Review</a>
-              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'input' %}" style="padding: 10px 64px;">Document</a>
-              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'text analysis' %}" style="padding: 10px 64px;">Text</a>
-              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'audio analysis' %}" style="padding: 10px 64px;">Audio</a>
-              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'tweet analysis' %}" style="padding: 10px 64px;">Tweet</a>
-              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'image analysis' %}" style="padding: 10px 64px;">Image</a>
-              </li>
-            </ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link"  href="{% url 'product analysis' %}" style="padding: 10px 64px;">Product Review</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'input' %}" style="padding: 10px 64px;">Document</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'text analysis' %}" style="padding: 10px 64px;">Text</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'audio analysis' %}" style="padding: 10px 64px;">Audio</a></li></ul>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'tweet analysis' %}" style="padding: 10px 64px;">Tweet</a></li></ul>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'image analysis' %}" style="padding: 10px 64px;">Image</a></li></ul>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-        <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-2">
-          <div class="menu-collapse" style="font-size: 1rem;">
-            <a class="u-button-style u-nav-link" href="#">
-              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
-</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'analysis' %}" style="padding: 10px 10px;">Home</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'analysis' %}" style="padding: 10px 10px;">Home</a>
-</li></ul>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-      </div></header>
-    <section class="u-clearfix u-image u-section-1" id="carousel_5990" data-image-width="1000" data-image-height="750">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <img src="{% static "images/c2d8d751435d17546c6dcd8f5da95afb.png"%}" alt="" class="u-image u-image-contain u-image-default u-image-1">
-        <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-1">
-          <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-middle-xs">
-            <h1 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-title u-text-1">Sentiment Analysis</h1>
-            <p class="u-align-center u-text u-text-body-alt-color u-text-2">Have you Ever wondered what sentiments are behind the reviews on amazon or maybe what some says or what someone writes. Here we have created an elegant solution to such queries by having analysis of these sentiments from the given input</p>
-            <div class="u-border-10 u-border-palette-1-base u-line u-line-horizontal u-line-1"></div>
-          </div>
-        </div>
+<!doctype html>
+<html lang="en">
+   <head>
+      {% load static %}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="57">
+      <link rel="shortcut icon" href="{% static "images/favicon-black.ico" %}">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+      <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+      <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}">
+      <link rel="stylesheet" href="{% static "css/jquery.fancybox.min.css" %}">
+      <link rel="stylesheet" href="{% static "fonts/icomoon/style.css" %}">
+      <link rel="stylesheet" href="{% static "fonts/flaticon/font/flaticon.css" %}">
+      <link rel="stylesheet" href="{% static "css/aos.css" %}">
+      <link rel="stylesheet" href="{% static "css/style.css" %}">
+      <title>C.E.L.T</title>
+   </head>
+
+   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+      <div class="lines-wrap">
+         <div class="lines-inner">
+            <div class="lines"></div>
+         </div>
       </div>
-    </section>
-    <section class="u-clearfix u-image u-section-2" id="carousel_21be">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-15 u-size-20-md u-layout-cell-1">
-                <div class="u-container-layout u-valign-middle-sm">
-                  <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-1">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="{% url 'product analysis' %}">Product Analysis</a>
-                  </h2>
-                  <p class="u-align-center u-text u-text-body-alt-color u-text-2">Want to find the sentiment behind amazon products</p>
-                </div>
-              </div>
-              <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-15 u-size-20-md u-layout-cell-2">
-                <div class="u-container-layout u-valign-middle-sm">
-                  <h2 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-3">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" href="{% url 'input' %}">Document Analysis</a>
-                  </h2>
-                  <p class="u-align-center u-text u-text-body-alt-color u-text-4">Want to analyse a document like PDF or word for the sentiments in them</p>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-3">
-                <div class="u-container-layout">
-                  <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-5">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3" href="{% url 'text analysis' %}">Text Analysis</a>
-                  </h2>
-                  <p class="u-align-center u-text u-text-body-alt-color u-text-6">Want to analyse simple text and find the sentiments</p>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-size-20-md u-layout-cell-4">
-                <div class="u-container-layout">
-                  <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-7">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4" href="{% url 'audio analysis' %}">Audio Analysis</a>
-                  </h2>
-                  <p class="u-text u-text-body-alt-color u-text-8">Want to analyse audio files and understand the sentiments of the speaker&nbsp;</p>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-size-20-md u-layout-cell-5">
-                <div class="u-container-layout">
-                  <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-7">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4" href="{% url 'tweet analysis' %}">Tweet Analysis</a>
-                  </h2>
-                  <p class="u-text u-text-body-alt-color u-text-8">Came across a tweet that you want to analyse and understand the sentiment&nbsp;</p>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-size-20-md u-layout-cell-6">
-                <div class="u-container-layout">
-                  <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-7">
-                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4" href="{% url 'image analysis' %}">Image Analysis</a>
-                  </h2>
-                  <p class="u-text u-text-body-alt-color u-text-8">Came across an image that you want to analyse and understand the sentiment&nbsp;</p>
-                </div>
-              </div>
+      
+      <div class="site-mobile-menu site-navbar-target">
+         <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+               <span class="icofont-close js-menu-toggle"></span>
             </div>
-          </div>
-        </div>
+         </div>
+         <div class="site-mobile-menu-body"></div>
       </div>
-    </section>
-    
-    
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-76e1"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">(C) <a href="https://github.com/mrpudlo/SE_Project1" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Github</a>
-        </p>
-      </div></footer>
-  </body>
+
+      <nav class="site-nav dark mb-5 site-navbar-target">
+         <div class="container">
+            <div class="site-navigation">
+               <a href="{% url 'analysis' %}" class="logo m-0">C.E.L.T<span class="text-primary">.</span></a>
+               <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
+                  <li><a href="#home-section" class="nav-link active">Home</a></li>
+                  <li><a href="#about-section" class="nav-link">About</a></li>
+                  <li><a href="#services-section" class="nav-link">Services</a></li>
+                  <li><a href="#contact-section" class="nav-link">Contact us</a></li>
+               </ul>
+               <a href="{% static "#" %}" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block" data-toggle="collapse" data-target="#main-navbar">
+               <span></span>
+               </a>
+            </div>
+         </div>
+      </nav>
+      <br><br>
+
+      <div class="untree_co-section pb-0" id="home-section">
+         <div class="container">
+            <div class="row justify-content-center text-center">
+               <div class="col-md-7">
+                  <h1 class="heading gsap-reveal-hero mb-3"><strong>Sentiment Analysis</strong></h1>
+                  <h2 class="subheading gsap-reveal-hero mb-4">
+                     Have you ever wondered what sentiments are behind the reviews on amazon or maybe what some says or what someone writes. Here we have created an elegant solution to such queries by having analysis of these sentiments from the given input.
+                  </h2>
+                  <p class="gsap-reveal-hero text-center"><a href="https://github.com/amit-99/SE_Project3/issues" target="_blank" class="btn btn-outline-black">Find more info here</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="untree_co-section pb-0" id="about-section">
+         <div class="container">
+            <div class="row mb-4" style="background-color: #0389ff;">
+               <div class="col-lg-7 text-center mx-auto">
+                  <h2 class="section-heading gsap-reveal-hero mb-0"><strong>About C.E.L.T</strong></h2>
+                  <p class="gsap-reveal-hero">C.E.L.T. is a versatile tool that can perform sentiment analysis on different types of data, including text, audio, reviews, and news articles. </p>
+               </div>
+            </div>
+            <div class="row mb-4">
+               <div class="col-lg-7 text-center mx-auto">
+                  <div class="wave gsap-reveal-hero" >
+                     <svg>
+                        <path d="M10,10 L50,100 L90,50" stroke="#000"></path>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/product.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Product Analysis</h3>
+                     <p class="gsap-reveal-hero">Need feedback for an Amazon product? Just paste the URL and C.E.L.T will analyze all the comments.</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/news.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">News Analysis</h3>
+                     <p class="gsap-reveal-hero">Want to know a sentiment of the news? Just type the news topic and C.E.L.T will analyze the news.</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/speech.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Live Speech Analysis</h3>
+                     <p class="gsap-reveal-hero">Record a live speech and C.E.L.T. will analyze a live speech and report back the sentiments.</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/audio.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Audio Analysis</h3>
+                     <p class="gsap-reveal-hero">Upload an audio file and C.E.L.T. will analyze the audio and report back the sentiments.</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/text.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Text Analysis</h3>
+                     <p class="gsap-reveal-hero">Type the text you want to analyze and C.E.L.T. will report back the sentiments.</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/doc.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Document Analysis</h3>
+                     <p class="gsap-reveal-hero">Upload a pdf or docx file and C.E.L.T. will analyze the text in it and report back the sentiments</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/image.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Image Analysis</h3>
+                     <p class="gsap-reveal-hero">Upload an image and C.E.L.T will tell the sentiments of the image.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="untree_co-section untree_co-section-4 pb-0"  id="services-section">
+         <div class="container">
+            <div class="relative">
+               <div class="loader-portfolio-wrap">
+                  <div class="loader-portfolio"></div>
+               </div>
+            </div>
+            <div id="portfolio-single-holder"></div>
+            <div class="row mb-4">
+               <div class="col-lg-7 text-center mx-auto">
+                  <h2 class="section-heading gsap-reveal-hero mb-0" style="font-size: 40px;"><strong>Services</strong></h2>
+                  <div class="wave gsap-reveal-hero" >
+                     <svg>
+                        <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+            <div class="portfolio-wrapper">
+               <div id="posts" class="row">
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Prouct Analysis</strong></h2>
+                     <a href="{% url 'product analysis' %}" class="portfolio-item isotope-item gsap-reveal-img" data-id="1">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_1.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>News Analysis</strong></h2> 
+                    <a href="{% url 'news analysis' %}" class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_2.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Live Speech Analysis</strong></h2>
+                    <a href="{% url 'live speech analysis' %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_3.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Text Analysis</strong></h2>
+                     <a href="{% url 'text analysis' %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_4.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Audio Analysis</strong></h2>
+                     <a href="{% url 'audio analysis' %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_5.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Document Analysis</strong></h2>
+                     <a href="{% url 'input' %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="1">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_6.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Image Analysis</strong></h2>
+                     <a href="{% url 'image analysis' %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="2">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_7.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <!-- <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-1.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_8.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div>
+                     <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-1.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_9.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div>
+                     <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-1.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_10.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div>
+                     <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-1.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_11.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div>
+                     <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-1.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_12.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div>
+                     <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-3.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_2.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div> -->
+               </div>
+            </div>
+            <!-- </div>
+               </div> -->
+         </div>
+      </div>
+
+      <div class="untree_co-section" id="contact-section">
+         <div class="container">
+            <div class="row mb-5">
+               <div class="col-lg-7 text-center mx-auto">
+                  <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Contact</strong></h2>
+                  <p class="gsap-reveal-hero">Have a suggestion? Get in touch</p>
+                  <div class="wave gsap-reveal-hero" >
+                     <svg>
+                        <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <form method="post" action="{% url 'send email' %}">
+                     {% csrf_token %}
+                     <div class="row">
+                         <div class="col-lg-6 form-group">
+                             <input type="text" name="firstname" class="form-control" placeholder="Firstname">
+                         </div>
+                         <div class="col-lg-6 form-group">
+                             <input type="text" name="lastname" class="form-control" placeholder="Lastname">
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-lg-12 form-group">
+                             <input type="email" name="email" class="form-control" placeholder="Email address">
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-lg-12 form-group">
+                             <textarea name="suggestion" cols="30" rows="7" class="form-control" placeholder="Write your suggestion..."></textarea>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12 form-group">
+                             <input type="submit" class="btn btn-black" value="Send Message">
+                         </div>
+                     </div>
+                 </form>
+               </div>
+               <div class="col-lg-6">
+                  <div id="map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.2700076114257!2d-78.67692588278936!3d35.76928335881713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acf5759f591f41%3A0xbe0266269ce37f59!2sJames%20B.%20Hunt%20Jr.%20Library!5e0!3m2!1sen!2sus!4v1700539732256!5m2!1sen!2sus"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="site-footer">
+         <div class="container">
+            <div class="row mt-5">
+               <div class="col-12 text-center">
+                  <p class="mb-0">
+                      Designed by Team 57
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div id="overlayer"></div>
+      <div class="loader">
+         <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+         </div>
+      </div>
+
+      <script src="{% static "js/jquery-3.4.1.min.js"%}"></script>
+      <script src="{% static "js/popper.min.js"%}"></script>
+      <script src="{% static "js/bootstrap.min.js"%}"></script>
+      <script src="{% static "js/owl.carousel.min.js"%}"></script>
+      <script src="{% static "js/jquery.animateNumber.min.js"%}"></script>
+      <script src="{% static "js/jquery.waypoints.min.js"%}"></script>
+      <script src="{% static "js/jquery.fancybox.min.js"%}"></script>
+      <script src="{% static "js/aos.js"%}"></script>
+      <script src="{% static "js/wave-animate.js"%}"></script>
+      <script src="{% static "js/circle-progress.js"%}"></script>
+      <script src="{% static "js/imagesloaded.pkgd.js"%}"></script>
+      <script src="{% static "js/isotope.pkgd.min.js"%}"></script>
+      <script src="{% static "js/jquery.easing.1.3.js"%}"></script>
+      <script src="{% static "js/TweenMax.min.js"%}"></script>
+      <script src="{% static "js/ScrollMagic.min.js"%}"></script>
+      <script src="{% static "js/scrollmagic.animation.gsap.min.js"%}"></script>
+      <script src="{% static "js/custom.js"%}"></script>
+   </body>
 </html>

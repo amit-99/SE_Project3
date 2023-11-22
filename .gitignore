@@ -5,6 +5,7 @@
 __pycache__
 db.sqlite3
 media
+sentimental_analysis/sentimental_analysis/settings.py
 
 # Backup files # 
 *.bak 
@@ -44,3 +45,4 @@ out/
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+

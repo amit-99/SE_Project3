@@ -14,22 +14,26 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-import realworld.views
-from django.conf.urls import url
-from django.contrib import admin
+from django.urls import re_path
+
+# from django.conf.urls import url
+
 from django.conf import settings
 from django.conf.urls.static import static
+import realworld.views
 
 urlpatterns = [
-    url('admin/', admin.site.urls),
-    url(r'^$',realworld.views.analysis,name='analysis'),
-    url(r'^input',realworld.views.input,name = 'input'),
-    url(r'^productanalysis',realworld.views.productanalysis,name = 'product analysis'),
-    url(r'^textanalysis',realworld.views.textanalysis,name = 'text analysis'),
-    url(r'^audioanalysis',realworld.views.audioanalysis,name = 'audio analysis'),
-    url(r'^tweetanalysis',realworld.views.tweetanalysis,name = 'tweet analysis'),
-    url(r'^imageanalysis',realworld.views.imageanalysis,name = 'image analysis'),
+    re_path('admin/', admin.site.urls),
+    re_path(r'^$',realworld.views.analysis,name='analysis'),
+    re_path(r'^input',realworld.views.input,name = 'input'),
+    re_path(r'^productanalysis',realworld.views.productanalysis,name = 'product analysis'),
+    re_path(r'^imageanalysis',realworld.views.imageAnalysis,name = 'image analysis'),
+    re_path(r'^textanalysis',realworld.views.textanalysis,name = 'text analysis'),
+    re_path(r'^audioanalysis',realworld.views.audioanalysis,name = 'audio analysis'),
+    re_path(r'^livespeechanalysis',realworld.views.livespeechanalysis,name = 'live speech analysis'),
+    re_path(r'^recordAudio', realworld.views.recordaudio, name = 'recordAudio'),
+    re_path(r'^newsanalysis',realworld.views.newsanalysis,name = 'news analysis'),
+    re_path(r'^sendemail',realworld.views.sendEmail,name = 'send email')    
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

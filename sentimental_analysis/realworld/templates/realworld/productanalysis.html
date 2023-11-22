@@ -1,102 +1,120 @@
-<!DOCTYPE html>
-<html style="font-size: 16px;">
-{% load static %}
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="{% static "css/nicepage.css" %}" media="screen">
-    <link rel="stylesheet" href="{% static "css/Page-1.css" %}" media="screen">
-    <script class="u-script" src="{% static "js/jquery.js" %}" type="text/javascript" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{% static "js/nicepage.js" %}" defer=""></script>
-    <meta name="generator" content="Nicepage 2.28.1, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Site1",
-		"url": "index.html"
-}</script>
-    <meta property="og:title" content="Page 1">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
-    <meta property="og:url" content="index.html">
-  </head>
-  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body"><header class="u-align-center-sm u-align-center-xs u-clearfix u-gradient u-header u-header" id="sec-0ea5"><div class="u-clearfix u-sheet u-sheet-1">
-        <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 1rem;">
-            <a class="u-button-style u-nav-link u-text-black" href="#">
-              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
-</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'product analysis' %}" style="padding: 10px 64px;">Product Review</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'input' %}" style="padding: 10px 64px;">Document</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'text analysis' %}" style="padding: 10px 64px;">Text</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'audio analysis' %}" style="padding: 10px 64px;">Audio</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'tweet analysis' %}" style="padding: 10px 64px;">Tweet</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="{% url 'image analysis' %}" style="padding: 10px 64px;">Image</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link"  href="{% url 'product analysis' %}" style="padding: 10px 64px;">Product Review</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'input' %}" style="padding: 10px 64px;">Document</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'text analysis' %}" style="padding: 10px 64px;">Text</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'audio analysis' %}" style="padding: 10px 64px;">Audio</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'tweet analysis' %}" style="padding: 10px 64px;">Tweet</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'image analysis' %}" style="padding: 10px 64px;">Image</a>
-</li></ul>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-        <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-2">
-          <div class="menu-collapse" style="font-size: 1rem;">
-            <a class="u-button-style u-nav-link" href="#">
-              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
-</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'analysis' %}" style="padding: 10px 10px;">Home</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'analysis' %}" style="padding: 10px 10px;">Home</a>
-</li></ul>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-      </div></header>
-<h1 style="padding-top: 20px; padding-bottom: 20px;margin: auto; text-align: center; font-family: Ranchers;">{{ note }}</h1>
-<form action = "{% url "product analysis" %}" method = "post">
-        {% csrf_token %}
-    
-    <div class="container" style="width: 100%; text-align: center">
-        <label for = "blogname">Blog URL</label><br/>
-    <input class="form-control form-control-lg" id = "blogname" type="text" name="blogname">
-    <br/>
-    <br/>
-    <button class="btn btn-primary btn-lg" style="background-color: #007bff; color: #ffffff; border: none; padding: 10px 10px; font-size: 1rem; cursor: pointer; border-radius: 5px;" type ="submit" value="Submit">Submit</button>
-      
-  </div>
-</form>
+<!doctype html>
+<html lang="en">
 
-</body>
-</html>
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="57">
+  <link rel="shortcut icon" href="{% static "images/favicon-black.ico" %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+  <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}">
+  <link rel="stylesheet" href="{% static "css/jquery.fancybox.min.css" %}">
+  <link rel="stylesheet" href="{% static "fonts/icomoon/style.css" %}">
+  <link rel="stylesheet" href="{% static "fonts/flaticon/font/flaticon.css" %}">
+  <link rel="stylesheet" href="{% static "css/aos.css" %}">
+  <link rel="stylesheet" href="{% static "css/style.css" %}">
+  <title>Product Analysis</title>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  
+  <nav class="site-nav dark mb-5 site-navbar-target">
+    <div class="container">
+       <div class="site-navigation">
+          <a href="{% url 'analysis' %}" class="logo m-0">C.E.L.T<span class="text-primary">.</span></a>
+          <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
+             <li><a href="{% url 'analysis' %}" class="nav-link active">Home</a></li>
+             <li><a href="{% url 'analysis' %}" class="nav-link">About</a></li>
+             <li><a href="{% url 'analysis' %}" class="nav-link">Services</a></li>
+             <li><a href="{% url 'analysis' %}" class="nav-link">Contact us</a></li>
+          </ul>
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block" data-toggle="collapse" data-target="#main-navbar">
+          <span></span>
+          </a>
+       </div>
+    </div>
+  </nav>
+
+  <div class="untree_co-section untree_co-section-4 pb-0"  id="portfolio-section">
+    <div class="container">
+      <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
+        <div class="portfolio-single-inner">
+          <h2 class="heading-portfolio-single-h2 text-black">Product Analysis</h2>
+          <div class="row mb-5 align-items-stretch">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <img src="{% static "images/inner/img_1.jpg" %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-6 pl-lg-5">
+              <div class="row mb-3">
+                <div class="col-sm-12 col-md-12 col-lg-12 mb-4">
+                  <div class="detail-v1">
+                    <form action = "{% url "product analysis" %}" method = "post">
+                      {% csrf_token %}
+                      <label for="blogname" class="detail-label">Product URL:</label>
+                      <input type="text" id="blogname" class="form-control" name="blogname" required>
+                      <br>
+                      <button type="submit" id="myButton" class="btn btn-black">Submit</button>
+                      <div id="message" style="display:none;">Wait till the results are generated.</div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 mb-4">
+                  <div class="detail-v1">
+                    <span class="detail-label">Accepts</span>
+                    <span class="detail-val">Amazon URL - Long Only</span>
+                  </div>
+                </div>
+              </div>
+              <p>Unlock powerful insights from Amazon product reviews with C.E.L.T! Paste the product URL, and watch as C.E.L.T analyzes all comments, delivering concise and valuable feedback. Effortlessly harness the wisdom of the crowd for informed decision-making!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="container">
+         <div class="row mt-5">
+            <div class="col-12 text-center">
+               <p class="mb-0">
+                   Designed by Team 57
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="{% static "js/jquery-3.4.1.min.js"%}"></script>
+   <script src="{% static "js/popper.min.js"%}"></script>
+   <script src="{% static "js/bootstrap.min.js"%}"></script>
+   <script src="{% static "js/owl.carousel.min.js"%}"></script>
+   <script src="{% static "js/jquery.animateNumber.min.js"%}"></script>
+   <script src="{% static "js/jquery.waypoints.min.js"%}"></script>
+   <script src="{% static "js/jquery.fancybox.min.js"%}"></script>
+   <script src="{% static "js/aos.js"%}"></script>
+   <script src="{% static "js/wave-animate.js"%}"></script>
+   <script src="{% static "js/circle-progress.js"%}"></script>
+   <script src="{% static "js/imagesloaded.pkgd.js"%}"></script>
+   <script src="{% static "js/isotope.pkgd.min.js"%}"></script>
+   <script src="{% static "js/jquery.easing.1.3.js"%}"></script>
+   <script src="{% static "js/TweenMax.min.js"%}"></script>
+   <script src="{% static "js/ScrollMagic.min.js"%}"></script>
+   <script src="{% static "js/scrollmagic.animation.gsap.min.js"%}"></script>
+   <script src="{% static "js/custom.js"%}"></script>
+    
+  </body>
+
+  </html>
