@@ -57,7 +57,7 @@ C.E.L.T. provides the following:
   <li><b>Cost-Efficiency:</b> Instead of using multiple specialized tools, a single tool that can handle multiple data types is cost-effective and streamlines the analysis process.</li>
 </ul>
 
-![meme](https://github.com/amit-99/SE_Project2/blob/develop/assets/images/meme.jpg?raw=true)
+![meme](https://github.com/amit-99/SE_Project3/blob/develop/assets/images/meme.jpg?raw=true)
 
 ### How was C.E.L.T. developed?
 The complete development was achieved using the following technologies:
@@ -95,7 +95,7 @@ git clone https://github.com/amit-99/SE_Project3.git
 2. Make sure you are using Python 3.11 or higher. You can get it here: https://www.python.org/downloads/release/python-3115/
 3. Install dependencies for the project from the root directory of the project:
 ```
-cd <your_download_dir>\SE_Project2\
+cd <your_download_dir>\SE_Project3\
 pip install -r requirements.txt
 ```
 4. Install ffmpeg:  
