@@ -77,10 +77,9 @@ def sendEmail(request):
 def format(similarityScore):
     result_dict = {}
     total = similarityScore[0].item() + similarityScore[1].item() + similarityScore[2].item()
-    result_dict['pos']=similarityScore[0].item()/total 
-    result_dict['neg']=similarityScore[1].item()/total 
-    result_dict['neu']=similarityScore[2].item()/total 
-    
+    result_dict['pos']=similarityScore[0].item()/total
+    result_dict['neg']=similarityScore[1].item()/total
+    result_dict['neu']=similarityScore[2].item()/total
     return result_dict
 
 def imageAnalysis(request):
@@ -137,9 +136,9 @@ def detailed_analysis(result):
         neg_count += sentiment['neg']
 
     total = pos_count + neu_count + neg_count
-    result_dict['pos'] = (pos_count/total)
-    result_dict['neu'] = (neu_count/total)
-    result_dict['neg'] = (neg_count/total)
+    result_dict['pos'] = pos_count/total
+    result_dict['neu'] = neu_count/total
+    result_dict['neg'] = neg_count/total
 
     return result_dict
 
@@ -209,7 +208,7 @@ def productanalysis(request):
             print("Scrapy spider executed successfully.")
         else:
             print("Error executing Scrapy spider.")
-       
+
         with open(r'Amazon_Comments_Scrapper/amazon_reviews_scraping/amazon_reviews_scraping/spiders/reviews.json', 'r') as json_file:
             json_data = json.load(json_file)
         reviews = []
