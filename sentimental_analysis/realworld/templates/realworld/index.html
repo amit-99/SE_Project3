@@ -1,416 +1,408 @@
-<!DOCTYPE html>
-<html>
-   {% load static %}
-   <head lang="en">
-      <meta charset="UTF-8">
-      <title>C.E.L.T</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-      <link rel="shortcut icon" href="{% static "images/favicon-black.ico" %}" title="Favicon"/>
+<!doctype html>
+<html lang="en">
+   <head>
+      {% load static %}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="57">
+      <link rel="shortcut icon" href="{% static "images/favicon-black.ico" %}">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+      <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+      <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}">
+      <link rel="stylesheet" href="{% static "css/jquery.fancybox.min.css" %}">
+      <link rel="stylesheet" href="{% static "fonts/icomoon/style.css" %}">
+      <link rel="stylesheet" href="{% static "fonts/flaticon/font/flaticon.css" %}">
+      <link rel="stylesheet" href="{% static "css/aos.css" %}">
       <link rel="stylesheet" href="{% static "css/style.css" %}">
-      <link rel="stylesheet" href="{% static "css/namari-color.css" %}">
-      <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"">
-      <link href="{% static "css/animate.css" %}" rel="stylesheet" type="text/css">
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+      <title>C.E.L.T</title>
    </head>
-   <body>
-      <style>
-         .form-label {
-         display: block;
-         font-weight: bold;
-         margin-bottom: 10px;
-         text-align: left;
-         }
-         .line-edit {
-         width: 100%;
-         padding: 10px;
-         border: 1px solid #ccc;
-         border-radius: 5px;
-         margin-bottom: 0px;
-         margin-right: 4px;
-         }
-         .hidden {
-         display: none;
-         }
-         .drop-container {
-         position: relative;
-         display: flex;
-         gap: 10px;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         height: 160px;
-         padding: 20px;
-         border-radius: 10px;
-         border: 2px dashed #555;
-         color: #444;
-         cursor: pointer;
-         transition: background .2s ease-in-out, border .2s ease-in-out;
-         }
-         .drop-container:hover {
-         background: #eee;
-         border-color: #111;
-         }
-         .drop-container:hover .drop-title {
-         color: #222;
-         }
-         .drop-title {
-         color: #444;
-         font-size: 20px;
-         font-weight: bold;
-         text-align: center;
-         transition: color .2s ease-in-out;
-         }
-      </style>
-      <div id="preloader">
-         <div id="status" class="la-ball-triangle-path">
-            <div></div>
-            <div></div>
-            <div></div>
+
+   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+      <div class="lines-wrap">
+         <div class="lines-inner">
+            <div class="lines"></div>
          </div>
       </div>
-      <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-         <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
-         <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
-         <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
-         <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+      
+      <div class="site-mobile-menu site-navbar-target">
+         <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+               <span class="icofont-close js-menu-toggle"></span>
+            </div>
+         </div>
+         <div class="site-mobile-menu-body"></div>
       </div>
-      <div id="wrapper">
-         <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-            <div id="header" class="nav-collapse">
-               <div class="row clearfix">
-                  <div class="col-1">
-                     <div id="logo">
-                        <img src="{% static "images/logo.png" %}" id="banner-logo" alt="Landing Page"/>
-                        <img src="{% static "images/logo-2.png" %}" id="navigation-logo" alt="Landing Page"/>
-                     </div>
-                     <aside>
-                        <ul class="social-icons">
-                           <li>
-                              <a target="_blank" title="YouTube" href="#" class="video" data-videoid="VLoJCemCdHg" data-videosite="youtube">
-                              <i class="fa fa-play fa-1x"></i><span>YouTube</span>
-                              </a>
-                           </li>
-                           <li>
-                              <a target="_blank" title="Github" href="https://github.com/amit-99/SE_Project2/">
-                              <i class="fab fa-github fa-1x"></i><span>Github</span>
-                              </a>
-                           </li>
-                        </ul>
-                     </aside>
-                     <div id="nav-trigger"><span></span></div>
-                     <nav id="nav-mobile"></nav>
-                  </div>
+
+      <nav class="site-nav dark mb-5 site-navbar-target">
+         <div class="container">
+            <div class="site-navigation">
+               <a href="{% url 'analysis' %}" class="logo m-0">C.E.L.T<span class="text-primary">.</span></a>
+               <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
+                  <li><a href="#home-section" class="nav-link active">Home</a></li>
+                  <li><a href="#about-section" class="nav-link">About</a></li>
+                  <li><a href="#services-section" class="nav-link">Services</a></li>
+                  <li><a href="#contact-section" class="nav-link">Contact us</a></li>
+               </ul>
+               <a href="{% static "#" %}" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block" data-toggle="collapse" data-target="#main-navbar">
+               <span></span>
+               </a>
+            </div>
+         </div>
+      </nav>
+      <br><br>
+
+      <div class="untree_co-section pb-0" id="home-section">
+         <div class="container">
+            <div class="row justify-content-center text-center">
+               <div class="col-md-7">
+                  <h1 class="heading gsap-reveal-hero mb-3"><strong>Sentiment Analysis</strong></h1>
+                  <h2 class="subheading gsap-reveal-hero mb-4">
+                     Have you ever wondered what sentiments are behind the reviews on amazon or maybe what some says or what someone writes. Here we have created an elegant solution to such queries by having analysis of these sentiments from the given input.
+                  </h2>
+                  <p class="gsap-reveal-hero text-center"><a href="https://github.com/amit-99/SE_Project3/issues" target="_blank" class="btn btn-outline-black">Find more info here</a></p>
                </div>
             </div>
-            <div id="banner-content" class="row clearfix">
-               <div class="col-38">
-                  <div class="section-heading">
-                     <h1>Sentiment Analysis</h1>
-                     <h2><br>Have you ever wondered what sentiments are behind the reviews on amazon or maybe what some says or what someone writes. Here we have created an elegant solution to such queries by having analysis of these sentiments from the given input. <br><br> Try our app. It takes all types of inputs: audio, text, pdfs, live speech, amazon url & news topics.</h2>
-                  </div>
-               </div>
-            </div>
-         </header>
-         <main id="content">
-            <section id="about" class="introduction scrollto">
-               <div class="row clearfix">
-                  <div class="col-3">
-                     <div class="section-heading">
-                        <h2 class="section-title">About our project</h2>
-                        <p class="section-subtitle">C.E.L.T provides different online tools to cater to any sentinmental analysis needs. C.E.L.T uses a powerful sentimental analyzer which is efficient and accurate.</p>
-                     </div>
-                  </div>
-                  <div class="col-2-3">
-                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="icon">
-                           <i class="fa fa-mobile fa-2x"></i>
-                        </div>
-                        <div class="icon-block-description">
-                           <h4>Product Analysis</h4>
-                           <p>Need feedback for an Amazon product? Just paste the URL and C.E.L.T will analyze all the comments.</p>
-                        </div>
-                     </div>
-                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="icon">
-                           <i class="fa-regular fa-newspaper fa-2x"></i>
-                        </div>
-                        <div class="icon-block-description">
-                           <h4>News Analysis</h4>
-                           <p>Want to know a sentiment of the news? Just type the news topic and C.E.L.T will analyze the news.</p>
-                        </div>
-                     </div>
-                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="icon">
-                           <i class="fa fa-file fa-2x"></i>
-                        </div>
-                        <div class="icon-block-description">
-                           <h4>Document Analysis</h4>
-                           <p>Upload a pdf or docx file and C.E.L.T. will analyze the text in it and report back the sentiments.</p>
-                        </div>
-                     </div>
-                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="icon">
-                           <i class="fa fa-font fa-2x"></i>
-                        </div>
-                        <div class="icon-block-description">
-                           <h4>Text Analysis</h4>
-                           <p>Type the text you want to analyze and C.E.L.T. will report back the sentiments.</p>
-                        </div>
-                     </div>
-                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="icon">
-                           <i class="fa fa-headphones fa-2x"></i>
-                        </div>
-                        <div class="icon-block-description">
-                           <h4>Audio Analysis</h4>
-                           <p>Upload an audio file and C.E.L.T. will analyze the audio and report back the sentiments.</p>
-                        </div>
-                     </div>
-                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="icon">
-                           <i class="fa-solid fa-microphone fa-2x"></i>
-                        </div>
-                        <div class="icon-block-description">
-                           <h4>Live Speech Analysis</h4>
-                           <p>Record a live speech and C.E.L.T. will analyze a live speech and report back the sentiments.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <section id="gallery" class="scrollto clearfix">
-               <div class="row no-padding-bottom clearfix">
-                  <div class="col-1">
-                     <div class="section-heading">
-                        <h2 class="section-title">Product Analysis</h2>
-                        <form action = "{% url "product analysis" %}" method = "post">
-                        {% csrf_token %}
-                        <label for="blogname" class="form-label">Paste Amazon URL:</label>
-                        <input type="text" id="blogname" class="line-edit" name="blogname" required>
-                        <button type="submit" id = "myButton"class="button">Analyze</button>
-                        <div id="message" class="hidden">Wait till the results are generated.</div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <section id="clients" class="scrollto clearfix">
-               <div class="row no-padding-bottom clearfix">
-                  <div class="col-1" style="padding-left: 0px;">
-                     <div class="section-heading">
-                        <h2 class="section-title">Image Analysis</h2>
-                        <form action = "{% url "image analysis" %}" method = "post" enctype="multipart/form-data">
-                        {% csrf_token %}    
-                        <label for="imageFile" class="drop-container" id="dropcontainer">
-                        <span class="drop-title">Drop image file here</span>
-                        or
-                        <input type="file" id="imageFile" name="imageFile" accept="image/jpeg, image/png" required>
-                        </label>
-                        <button type="submit" id = "myButton" class="button">Analyze</button>
-                        <div id="message" class="hidden">Wait till the results are generated</div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <section id="gallery" class="scrollto clearfix">
-               <div class="row no-padding-bottom clearfix">
-                  <div class="col-1">
-                     <div class="section-heading">
-                        <h2 class="section-title">News Analysis</h2>
-                        <form action = "{% url "news analysis" %}" method = "post">
-                        {% csrf_token %}
-                        <label for="blogname" class="form-label">Topic Name:</label>
-                        <input type="text" id="topicname" class="line-edit" name="topicname" required>
-                        <button type="submit" id="topicButton" class="button">Analyze</button>
-                        <div id="message" class="hidden">Wait till the results are generated.</div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <section id="services" class="scrollto clearfix">
-               <div class="row no-padding-bottom clearfix">
-                  <div class="col-1" style="padding-left: 0px;">
-                     <div class="section-heading">
-                        <h2 class="section-title">Document Analysis</h2>
-                        <form action = "{% url "input" %}" method = "post" enctype="multipart/form-data">
-                        {% csrf_token %}    
-                        <label for="text" class="drop-container" id="dropcontainer">
-                        <span class="drop-title">Drop files here</span>
-                        or
-                        <input type="file" id="file" name="document" accept="text/plain" required>
-                        </label>
-                        <button type="submit" id = "myButton"class="button">Analyze</button>
-                        <div id="message" class="hidden">Wait till the results are generated</div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <section id="testimonials" class="scrollto clearfix">
-               <div class="row no-padding-bottom clearfix">
-                  <div class="col-1" style="padding-left: 0px;">
-                     <div class="section-heading">
-                        <h2 class="section-title">Text Analysis</h2>
-                        <form action = "{% url "text analysis" %}" method = "post" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        <label for="textField" class="form-label">Write here:</label>
-                        <input type="textField" id="text" class="line-edit" name="textField" required>
-                        <button type="submit" id ="myButton2"class="button">Analyze</button>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <section id="clients" class="scrollto clearfix">
-               <div class="row no-padding-bottom clearfix">
-                  <div class="col-1" style="padding-left: 0px;">
-                     <div class="section-heading">
-                        <h2 class="section-title">Audio Analysis</h2>
-                        <form action = "{% url "audio analysis" %}" method = "post" enctype="multipart/form-data">
-                        {% csrf_token %}    
-                        <label for="audio" class="drop-container" id="dropcontainer">
-                        <span class="drop-title">Drop audio file here</span>
-                        or
-                        <input type="file" id="file" name="audioFile" accept="audio/mpeg, audio/wav, audio/ogg" required>
-                        </label>
-                        <button type="submit" id = "myButton" class="button">Analyze</button>
-                        <div id="message" class="hidden">Wait till the results are generated</div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <section id="pricing" class="scrollto clearfix">
-               <div class="row no-padding-bottom clearfix">
-                  <div class="col-1" style="padding-left: 0px;">
-                     <div class="section-heading">
-                        <h2 class="section-title">Live Speech Analysis</h2>
-                        <form action = "{% url "live speech analysis" %}" method = "post" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        <input type="file" name="liveaudioFile" accept="audio/*" capture="microphone" id="audio-input" style="display: none">
-                        <h4> <label id="labelForRecording"></label></h4>
-                        <button type="button" id="recordButton" class="button">Start Recording</button>
-                        <button type="submit" id = "submitButton" class="button">Analyze</button>
-                        <!-- <button type="button" id="stop-button" style="display: none;">Stop Recording</button> -->
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </section>
-         </main>
-         <footer id="landing-footer" class="clearfix">
-            <div class="row clearfix">
-               <p id="copyright" class="col-2">Developed by <a href="https://github.com/amit-99/SE_Project2/">Team 57</a></p>
-            </div>
-         </footer>
+         </div>
       </div>
-      <script src="{% static "js/jquery.1.8.3.min.js" %}"></script>
-      <script src="{% static "js/wow.min.js" %}"></script>
-      <script src="{% static "js/featherlight.min.js" %}"></script>
-      <script src="{% static "js/featherlight.gallery.min.js" %}"></script>
-      <script src="{% static "js/jquery.enllax.min.js" %}"></script>
-      <script src="{% static "js/jquery.scrollUp.min.js" %}"></script>
-      <script src="{% static "js/jquery.easing.min.js" %}"></script>
-      <script src="{% static "js/jquery.stickyNavbar.min.js" %}"></script>
-      <script src="{% static "js/jquery.waypoints.min.js" %}"></script>
-      <script src="{% static "js/images-loaded.min.js" %}"></script>
-      <script src="{% static "js/lightbox.min.js" %}"></script>
-      <script src="{% static "js/site.js" %}"></script>
-      <script>
-         document.getElementById('myButton').addEventListener('click', function() {
-         
-             var messageDiv = document.getElementById('message');
-             messageDiv.style.display = 'block';
-             setTimeout(function() {
-                 messageDiv.style.display = 'none';
-             }, 10000);
-         });
-         
-         const dropContainer = document.getElementById("dropcontainer")
-         const fileInput = document.getElementById("file")
-         
-         dropContainer.addEventListener("dragover", (e) => {
-             // prevent default to allow drop
-             e.preventDefault()
-         }, false)
-         
-         dropContainer.addEventListener("dragenter", () => {
-             dropContainer.classList.add("drag-active")
-         })
-         
-         dropContainer.addEventListener("dragleave", () => {
-             dropContainer.classList.remove("drag-active")
-         })
-         
-         dropContainer.addEventListener("drop", (e) => {
-             e.preventDefault()
-             dropContainer.classList.remove("drag-active")
-             fileInput.files = e.dataTransfer.files
-         })
-         
-         let mediaRecorder;
-         const audioChunks = [];
-         var label = document.getElementById('labelForRecording')
-         document.getElementById('recordButton').addEventListener('click', async () => {
-             if (recordButton.textContent === 'Start Recording') {
-                 try {
-                     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-                     mediaRecorder = new MediaRecorder(stream);
-         
-                     mediaRecorder.ondataavailable = (event) => {
-                         if (event.data.size > 0) {
-                             audioChunks.push(event.data);
-                         }
-                     };
-         
-                     mediaRecorder.onstop = () => {
-                         const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
-                         sendDataToDjango(audioBlob);
-                     };
-         
-                     mediaRecorder.start();
-                     label.textContent = "Recording has started."
-                     recordButton.textContent = 'Stop Recording';
-                 } catch (error) {
-                     console.error('Error accessing microphone:', error);
-                 }
-             } else {
-                 audioChunks.length = 0;
-                 label.textContent = "Recording is completed. Kindly, press analyze to do sentimental analysis"
-                 mediaRecorder.stop();
-                 recordButton.textContent = 'Start Recording';
-             }
-         });
-         let count = 1;
-         function sendDataToDjango(audioBlob) {
-             const formData = new FormData();
-             const filename = `${count}.wav`;
-             formData.append('liveaudioFile', audioBlob, filename);
-         
-             fetch('/recordAudio/', {
-                 method: 'POST',
-                 body: formData,
-             })
-             .then(response => {
-                 if (response.status === 200) {
-                     console.log('Audio sent to Django successfully.');
-                 } else {
-                     console.error('Failed to send audio to Django.');
-                     // Handle error
-                 }
-             })
-             .catch(error => {
-                 console.error('Error sending audio to Django:', error);
-             });
-         
-             count++;
-         }
-         
-      </script>
+
+      <div class="untree_co-section pb-0" id="about-section">
+         <div class="container">
+            <div class="row mb-4" style="background-color: #0389ff;">
+               <div class="col-lg-7 text-center mx-auto">
+                  <h2 class="section-heading gsap-reveal-hero mb-0"><strong>About C.E.L.T</strong></h2>
+                  <p class="gsap-reveal-hero">C.E.L.T. is a versatile tool that can perform sentiment analysis on different types of data, including text, audio, reviews, and news articles. </p>
+               </div>
+            </div>
+            <div class="row mb-4">
+               <div class="col-lg-7 text-center mx-auto">
+                  <div class="wave gsap-reveal-hero" >
+                     <svg>
+                        <path d="M10,10 L50,100 L90,50" stroke="#000"></path>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/product.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Product Analysis</h3>
+                     <p class="gsap-reveal-hero">Need feedback for an Amazon product? Just paste the URL and C.E.L.T will analyze all the comments.</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/news.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">News Analysis</h3>
+                     <p class="gsap-reveal-hero">Want to know a sentiment of the news? Just type the news topic and C.E.L.T will analyze the news.</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/speech.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Live Speech Analysis</h3>
+                     <p class="gsap-reveal-hero">Record a live speech and C.E.L.T. will analyze a live speech and report back the sentiments.</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/audio.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Audio Analysis</h3>
+                     <p class="gsap-reveal-hero">Upload an audio file and C.E.L.T. will analyze the audio and report back the sentiments.</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/text.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Text Analysis</h3>
+                     <p class="gsap-reveal-hero">Type the text you want to analyze and C.E.L.T. will report back the sentiments.</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/doc.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Document Analysis</h3>
+                     <p class="gsap-reveal-hero">Upload a pdf or docx file and C.E.L.T. will analyze the text in it and report back the sentiments</p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+                  <div class="service text-center">
+                     <div class="gsap-reveal-hero mb-3">
+                        <span class="icon-service"><img src="{% static "images/png/image.png"%}" alt="Image" class="img-fluid"></span>
+                     </div>
+                     <h3 class="gsap-reveal-hero">Image Analysis</h3>
+                     <p class="gsap-reveal-hero">Upload an image and C.E.L.T will tell the sentiments of the image.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="untree_co-section untree_co-section-4 pb-0"  id="services-section">
+         <div class="container">
+            <div class="relative">
+               <div class="loader-portfolio-wrap">
+                  <div class="loader-portfolio"></div>
+               </div>
+            </div>
+            <div id="portfolio-single-holder"></div>
+            <div class="row mb-4">
+               <div class="col-lg-7 text-center mx-auto">
+                  <h2 class="section-heading gsap-reveal-hero mb-0" style="font-size: 40px;"><strong>Services</strong></h2>
+                  <div class="wave gsap-reveal-hero" >
+                     <svg>
+                        <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+            <div class="portfolio-wrapper">
+               <div id="posts" class="row">
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Prouct Analysis</strong></h2>
+                     <a href="{% url 'product analysis' %}" class="portfolio-item isotope-item gsap-reveal-img" data-id="1">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_1.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>News Analysis</strong></h2> 
+                    <a href="{% url 'news analysis' %}" class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_2.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Live Speech Analysis</strong></h2>
+                    <a href="{% url 'live speech analysis' %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_3.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Text Analysis</strong></h2>
+                     <a href="{% url 'text analysis' %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_4.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Audio Analysis</strong></h2>
+                     <a href="{% url 'audio analysis' %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_5.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Document Analysis</strong></h2>
+                     <a href="{% url 'input' %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="1">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_6.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <h6 class="section-heading gsap-reveal-hero mb-0" style="font-size: 24px;"><strong>Image Analysis</strong></h2>
+                     <a href="{% url 'image analysis' %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="2">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_7.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                  </div>
+                  <!-- <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-1.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_8.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div>
+                     <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-1.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_9.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div>
+                     <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-1.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_10.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div>
+                     <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-1.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_11.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div>
+                     <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-1.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_12.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div>
+                     <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                     <a href="{% static "portfolio-single-3.html" %}" class="portfolio-item  isotope-item gsap-reveal-img" data-id="3">
+                        <div class="overlay">
+                           <span class="wrap-icon icon-link2"></span>
+                           <div class="portfolio-item-content">
+                           </div>
+                        </div>
+                        <img src="{% static "images/img_2.jpg" %}" class="lazyload  img-fluid" alt="Images" />
+                     </a>
+                     </div> -->
+               </div>
+            </div>
+            <!-- </div>
+               </div> -->
+         </div>
+      </div>
+
+      <div class="untree_co-section" id="contact-section">
+         <div class="container">
+            <div class="row mb-5">
+               <div class="col-lg-7 text-center mx-auto">
+                  <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Contact</strong></h2>
+                  <p class="gsap-reveal-hero">Have a suggestion? Get in touch</p>
+                  <div class="wave gsap-reveal-hero" >
+                     <svg>
+                        <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <form method="post" action="{% url 'send email' %}">
+                     {% csrf_token %}
+                     <div class="row">
+                         <div class="col-lg-6 form-group">
+                             <input type="text" name="firstname" class="form-control" placeholder="Firstname">
+                         </div>
+                         <div class="col-lg-6 form-group">
+                             <input type="text" name="lastname" class="form-control" placeholder="Lastname">
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-lg-12 form-group">
+                             <input type="email" name="email" class="form-control" placeholder="Email address">
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-lg-12 form-group">
+                             <textarea name="suggestion" cols="30" rows="7" class="form-control" placeholder="Write your suggestion..."></textarea>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-12 form-group">
+                             <input type="submit" class="btn btn-black" value="Send Message">
+                         </div>
+                     </div>
+                 </form>
+               </div>
+               <div class="col-lg-6">
+                  <div id="map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.2700076114257!2d-78.67692588278936!3d35.76928335881713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acf5759f591f41%3A0xbe0266269ce37f59!2sJames%20B.%20Hunt%20Jr.%20Library!5e0!3m2!1sen!2sus!4v1700539732256!5m2!1sen!2sus"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="site-footer">
+         <div class="container">
+            <div class="row mt-5">
+               <div class="col-12 text-center">
+                  <p class="mb-0">
+                      Designed by Team 57
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div id="overlayer"></div>
+      <div class="loader">
+         <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+         </div>
+      </div>
+
+      <script src="{% static "js/jquery-3.4.1.min.js"%}"></script>
+      <script src="{% static "js/popper.min.js"%}"></script>
+      <script src="{% static "js/bootstrap.min.js"%}"></script>
+      <script src="{% static "js/owl.carousel.min.js"%}"></script>
+      <script src="{% static "js/jquery.animateNumber.min.js"%}"></script>
+      <script src="{% static "js/jquery.waypoints.min.js"%}"></script>
+      <script src="{% static "js/jquery.fancybox.min.js"%}"></script>
+      <script src="{% static "js/aos.js"%}"></script>
+      <script src="{% static "js/wave-animate.js"%}"></script>
+      <script src="{% static "js/circle-progress.js"%}"></script>
+      <script src="{% static "js/imagesloaded.pkgd.js"%}"></script>
+      <script src="{% static "js/isotope.pkgd.min.js"%}"></script>
+      <script src="{% static "js/jquery.easing.1.3.js"%}"></script>
+      <script src="{% static "js/TweenMax.min.js"%}"></script>
+      <script src="{% static "js/ScrollMagic.min.js"%}"></script>
+      <script src="{% static "js/scrollmagic.animation.gsap.min.js"%}"></script>
+      <script src="{% static "js/custom.js"%}"></script>
    </body>
 </html>

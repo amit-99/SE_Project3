@@ -32,7 +32,8 @@ urlpatterns = [
     re_path(r'^audioanalysis',realworld.views.audioanalysis,name = 'audio analysis'),
     re_path(r'^livespeechanalysis',realworld.views.livespeechanalysis,name = 'live speech analysis'),
     re_path(r'^recordAudio', realworld.views.recordaudio, name = 'recordAudio'),
-    re_path(r'^newsanalysis',realworld.views.newsanalysis,name = 'news analysis')
+    re_path(r'^newsanalysis',realworld.views.newsanalysis,name = 'news analysis'),
+    re_path(r'^sendemail',realworld.views.sendEmail,name = 'send email')    
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

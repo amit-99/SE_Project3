@@ -44,3 +44,5 @@ out/
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+
+sentimental_analysis/sentimental_analysis/settings.py

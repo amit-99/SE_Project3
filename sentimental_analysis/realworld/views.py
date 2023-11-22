@@ -10,6 +10,9 @@ from django.core.files.storage import FileSystemStorage
 from django.views.decorators.csrf import csrf_exempt
 from django.template.defaulttags import register
 from django.http import HttpResponse
+from django.core.mail import send_mail
+from django.shortcuts import render, redirect
+from django.conf import settings
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfpage import PDFPage
 from pdfminer.converter import TextConverter
@@ -22,6 +25,15 @@ from nltk.corpus import stopwords
 import torch
 from transformers import CLIPProcessor, CLIPModel
 from PIL import Image
+from docx import Document
+
+def docxparser(data):
+    doc = Document(data)
+    paragraphs = [paragraph.text for paragraph in doc.paragraphs]
+    text = ". ".join(paragraphs)
+    with open("Output.docx.txt", "w", encoding="utf-8") as text_file:
+        text_file.write(text)
+    return text
 
 def pdfparser(data):
     fp = open(data, 'rb')
@@ -48,6 +60,20 @@ def pdfparser(data):
     final_comment = a.split('.')
     return final_comment
 
+def sendEmail(request):
+    if request.method == 'POST':
+        firstname = request.POST.get('firstname')
+        lastname = request.POST.get('lastname')
+        email = request.POST.get('email')
+        suggestion = request.POST.get('suggestion')
+        subject = f'C.E.L.T Suggestion from : {firstname}'
+        message = f'First Name: {firstname}\nLast Name: {lastname}\nEmail: {email}\nSuggestion: {suggestion}'
+        toEmail = ["celttsa@gmail.com"]
+        send_mail(subject, message, email,toEmail, fail_silently=False)
+        return render(request, 'realworld/index.html')
+    else:
+        return render(request, 'realworld/index.html')
+    
 def format(similarityScore):
     result_dict = {}
     total = similarityScore[0].item() + similarityScore[1].item() + similarityScore[2].item()
@@ -73,11 +99,10 @@ def imageAnalysis(request):
         similarity_scores = (image_features @ text_features.T).squeeze(0)
         result = format(similarity_scores)
         finalText = "As this is an image, there is no text."
-        print(result)
         return render(request, 'realworld/results.html', {'sentiment': result, 'text': finalText})
     else:
         note = "Please upload the image you want to analyze"
-        return render(request, 'realworld/home.html', {'note': note})
+        return render(request, 'realworld/imageAnalysis.html', {'note': note})
     
 def analysis(request):
     return render(request, 'realworld/index.html')
@@ -125,17 +150,18 @@ def input(request):
         fs.save(file.name, file)
         pathname = 'sentimental_analysis/media/'
         extension_name = file.name
-        extension_name = extension_name[len(extension_name)-3:]
+        extension_name = extension_name.split('.')[-1]
         path = pathname+file.name
         destination_folder = 'sentimental_analysis/media/document/'
         shutil.copy(path, destination_folder)
         useFile = destination_folder+file.name
         result = {}
         finalText = ''
+        print(extension_name)
         if extension_name == 'pdf':
             value = pdfparser(useFile)
             result = detailed_analysis(value)
-            finalText = result
+            finalText = ". ".join(value)
         elif extension_name == 'txt':
             text_file = open(useFile, 'r', encoding="utf-8")
             a = ""
@@ -146,7 +172,12 @@ def input(request):
                         a += " " + i
             final_comment = a.split('.')
             text_file.close()
-            finalText = final_comment
+            finalText = ". ".join(final_comment)
+            result = detailed_analysis(final_comment)
+        elif extension_name == 'docx':
+            text = docxparser(useFile)
+            final_comment = text.split('.')
+            finalText = ". ".join(final_comment)
             result = detailed_analysis(final_comment)
         folder_path = 'sentimental_analysis/media/'
         files = os.listdir(folder_path)
@@ -158,7 +189,7 @@ def input(request):
         return render(request, 'realworld/results.html', {'sentiment': result, 'text': finalText})
     else:
         note = "Please Enter the Document you want to analyze"
-        return render(request, 'realworld/home.html', {'note': note})
+        return render(request, 'realworld/documentAnalysis.html', {'note': note})
 
 def productanalysis(request):
     if request.method == 'POST':
@@ -185,23 +216,23 @@ def productanalysis(request):
 
         for item in json_data:
             reviews.append(item['Review'])
-        finalText = reviews
+        finalText = ". ".join(reviews)
         result = detailed_analysis(reviews)
         return render(request, 'realworld/results.html', {'sentiment': result, 'text' : finalText})
     else:
         note = "Please Enter the product blog link for analysis"
-        return render(request, 'realworld/productanalysis.html', {'note': note})
+        return render(request, 'realworld/productAnalysis.html', {'note': note})
 
 def textanalysis(request):
     if request.method == 'POST':
         text_data = request.POST.get("textField", "")
         final_comment = text_data.split('.')
         result = detailed_analysis(final_comment)
-        finalText = final_comment
+        finalText = ". ".join(final_comment)
         return render(request, 'realworld/results.html', {'sentiment': result, 'text' : finalText})
     else:
         note = "Enter the Text to be analysed!"
-        return render(request, 'realworld/textanalysis.html', {'note': note})
+        return render(request, 'realworld/textAnalysis.html', {'note': note})
 
 def audioanalysis(request):
     if request.method == 'POST':
@@ -216,10 +247,15 @@ def audioanalysis(request):
         destination_folder = 'sentimental_analysis/media/audio/'
         shutil.copy(path, destination_folder)
         useFile = destination_folder+file.name
+        audio = AudioSegment.from_file(useFile)
+        audio = audio.set_sample_width(2)
+        audio = audio.set_frame_rate(44100)
+        audio = audio.set_channels(1)
+        audio.export(useFile, format='wav')
         text = speech_to_text(useFile)
-        finalText = text
-        result = detailed_analysis(text)
-
+        final_comment = text.split('.')
+        finalText = ". ".join(final_comment)
+        result = detailed_analysis(final_comment)
         folder_path = 'sentimental_analysis/media/'
         files = os.listdir(folder_path)
         for file in files:
@@ -229,7 +265,7 @@ def audioanalysis(request):
         return render(request, 'realworld/results.html', {'sentiment': result, 'text' : finalText})
     else:
         note = "Please Enter the audio file you want to analyze"
-        return render(request, 'realworld/audio.html', {'note': note})
+        return render(request, 'realworld/audioAnalysis.html', {'note': note})
 
 
 def livespeechanalysis(request):
@@ -239,9 +275,9 @@ def livespeechanalysis(request):
         audioFile = my_file_handle.read()
         result = {}
         text = speech_to_text(audioFile)
-
-        finalText = text
-        result = detailed_analysis(text)
+        final_comment = text.split('.')
+        finalText = ". ".join(final_comment)
+        result = detailed_analysis(final_comment)
         folder_path = 'sentimental_analysis/media/recordedAudio/'
         files = os.listdir(folder_path)
         for file in files:
@@ -249,7 +285,9 @@ def livespeechanalysis(request):
             if os.path.isfile(file_path):
                 os.remove(file_path)
         return render(request, 'realworld/results.html', {'sentiment': result, 'text' : finalText})
-
+    else:
+        note = "Please record another file"
+        return render(request, 'realworld/speechAnalysis.html', {'note': note})
 
 @csrf_exempt
 def recordaudio(request):
@@ -295,11 +333,11 @@ def newsanalysis(request):
         news = []
         for item in json_data:
             news.append(item['Summary'])
-        finalText = news
+        finalText = ". ".join(news)
         result = detailed_analysis(news)
         return render(request, 'realworld/results.html', {'sentiment': result, 'text' : finalText})
     else:
-        return render(request, 'realworld/index.html')
+        return render(request, 'realworld/newsAnalysis.html')
 
 def speech_to_text(filename):
     r = sr.Recognizer()
@@ -307,13 +345,11 @@ def speech_to_text(filename):
         audio_data = r.record(source)
         text = r.recognize_google(audio_data)
         return text
-
-
+    
 def sentiment_analyzer_scores(sentence):
     analyser = SentimentIntensityAnalyzer()
     score = analyser.polarity_scores(sentence)
     return score
-
 
 @register.filter(name='get_item')
 def get_item(dictionary, key):
