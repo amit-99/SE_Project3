@@ -3,6 +3,7 @@ import os
 import scrapy
 from scrapy import Request
 
+
 reviews_base_url = 'https://www.amazon.com/product-reviews/{}'
 asin_list = []
 
