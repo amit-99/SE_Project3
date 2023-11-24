@@ -328,13 +328,17 @@ def newsanalysis(request):
         topicname = request.POST.get("topicname", "")
         scrapNews(topicname)
 
-        with open(r'news.json', 'r') as json_file:
+        with open('sentimental_analysis/realworld/news.json', 'r') as json_file:
             json_data = json.load(json_file)
         news = []
         for item in json_data:
             news.append(item['Summary'])
+        
         finalText = ". ".join(news)
+        finalText = finalText.replace('\n', '\\n')
+        print(finalText)
         result = detailed_analysis(news)
+        print(result)
         return render(request, 'realworld/results.html', {'sentiment': result, 'text' : finalText})
     else:
         return render(request, 'realworld/newsAnalysis.html')
