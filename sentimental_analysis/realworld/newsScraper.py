@@ -32,7 +32,7 @@ def scrapNews(topicName):
         if article.summary[:2] != "Ad":
             dict['Summary'] = article.summary
             article_list.append(dict)
-    with open('sentimental_analysis/realworld/news.json', 'w') as json_file:
+    with open('news.json', 'w') as json_file:
         json.dump(article_list, json_file)
 
     print("Articles saved to news.json")

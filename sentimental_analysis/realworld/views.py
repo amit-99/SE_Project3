@@ -327,7 +327,7 @@ def newsanalysis(request):
         topicname = request.POST.get("topicname", "")
         scrapNews(topicname)
 
-        with open('sentimental_analysis/realworld/news.json', 'r') as json_file:
+        with open('news.json', 'r') as json_file:
             json_data = json.load(json_file)
         news = []
         for item in json_data:
