@@ -144,6 +144,8 @@ add gif
 - [x] Amazon Product Analysis Feature addition
 - [x] Case Study done for Amazon Product Review Sentiment Analysis 
 - [x] Simple Documentation, Unit tests addition
+- [x] Sentiment Analysis of Images
+- [x] Twitter Post Sentiment Analysis
 
 ### Current Achievements
 ☑️  Live Sentiment Analysis Feature inclusion<br>
@@ -154,6 +156,7 @@ add gif
 ☑️  Unit Tests were written and Test Coverage was improved<br>
 ☑️  Public facing webpage to get feedbacks, Raise and handle issues, Discuss & Grow with enthusiasts and supportive community<br>  
 
+9
 ### Future Scope
 - [ ] Implement User Authentication to store the history of each User
 - [ ] Recommendation System based on Product Analysis Results 

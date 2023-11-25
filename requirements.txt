@@ -12,8 +12,8 @@ Django~=3.1.1
 hyperlink~=20.0.1
 idna~=2.10
 incremental~=17.5.0
-itemadapter~=0.1.0
-itemloaders~=1.0.3
+itemadapter~=0.8.0
+itemloaders~=1.1.0
 jmespath~=0.10.0
 joblib~=0.16.0
 lxml~=4.9.3
@@ -51,5 +51,9 @@ Pillow~=9.3.0
 pylint==3.0.1
 pytest==7.4.2
 python-docx==1.1.0
-newspaper==0.1.0.7
+scrapeops-scrapy==0.5.3
+scrapeops-scrapy-proxy-sdk==1.0
 pydub==0.25.1
+newspaper3k==0.2.8
+stopwords==1.0.0
+wordcloud==1.9.2
