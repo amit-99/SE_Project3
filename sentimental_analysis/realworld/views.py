@@ -216,6 +216,8 @@ def productanalysis(request):
         for item in json_data:
             reviews.append(item['Review'])
         finalText = ". ".join(reviews)
+        finalText = finalText.replace('\n', '\\n')
+        print(finalText)
         result = detailed_analysis(reviews)
         return render(request, 'realworld/results.html', {'sentiment': result, 'text' : finalText})
     else:
