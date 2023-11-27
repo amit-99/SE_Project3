@@ -271,8 +271,7 @@ def audioanalysis(request):
 
 def livespeechanalysis(request):
     if request.method == 'POST':
-        my_file_handle = open(
-            'sentimental_analysis/realworld/recordedAudio.txt')
+        my_file_handle = open('./sentimental_analysis/realworld/recordedAudio.txt')
         audioFile = my_file_handle.read()
         result = {}
         text = speech_to_text(audioFile)
