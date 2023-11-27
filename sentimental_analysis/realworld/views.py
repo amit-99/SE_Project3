@@ -73,7 +73,7 @@ def sendEmail(request):
         return render(request, 'realworld/index.html')
     else:
         return render(request, 'realworld/index.html')
-    
+
 def format(similarityScore):
     result_dict = {}
     total = similarityScore[0].item() + similarityScore[1].item() + similarityScore[2].item()
@@ -102,7 +102,7 @@ def imageAnalysis(request):
     else:
         note = "Please upload the image you want to analyze"
         return render(request, 'realworld/imageAnalysis.html', {'note': note})
-    
+
 def analysis(request):
     return render(request, 'realworld/index.html')
 
@@ -334,7 +334,7 @@ def newsanalysis(request):
         news = []
         for item in json_data:
             news.append(item['Summary'])
-        
+
         finalText = ". ".join(news)
         finalText = finalText.replace('\n', '\\n')
         print(finalText)
@@ -350,7 +350,7 @@ def speech_to_text(filename):
         audio_data = r.record(source)
         text = r.recognize_google(audio_data)
         return text
-    
+
 def sentiment_analyzer_scores(sentence):
     analyser = SentimentIntensityAnalyzer()
     score = analyser.polarity_scores(sentence)
