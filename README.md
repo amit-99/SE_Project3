@@ -185,7 +185,7 @@ To Contribute to our application, please refer to [CONTRIBUTING.md](https://gith
 - Join our discord forum for updates or support or discussions. [Join Here!](https://discord.gg/WsDzsyB2X)
 - Or just want to be part of our journey and get to know more about the C.E.L.T and its team
 
-**Visit our web page to be part of [C.E.L.T. community](https://factual-squash-083.notion.site/C-E-L-T-The-Sentiment-Analyzer-f771d9e92c494c9b85a4faeb6e3621a1)**
+**Visit our web page to be part of [C.E.L.T. community](https://factual-squash-083.notion.site/C-E-L-T-The-Sentiment-Analyzer-c71e9ace2c684b94b75fb9414e7fee75?pvs=4)**
 
 ---
 
