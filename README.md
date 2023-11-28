@@ -96,25 +96,28 @@ Although HTML and CSS are used for the front end, the users can merge the backen
 ```
 git clone https://github.com/amit-99/SE_Project3.git
 ```
-2. Make sure you are using Python 3.11 or higher. You can get it here: https://www.python.org/downloads/release/python-3115/
+2. Make sure you are using Python 3.11 or higher. You can get it here:https://www.python.org/downloads/release/python-3115/
 3. Install dependencies for the project from the root directory of the project:
 ```
 cd <your_download_dir>\SE_Project3\
 pip install -r requirements.txt
 ```
-4. Install ffmpeg: 
+4. Install ffmpeg:  
 
-4. Install ffmpeg: 
+    For Windows:
 
-For Windows:  
 ```
 winget install ffmpeg
-```  
-For Linux (Ubuntu):  
+```
+
+    For Linux (Ubuntu):  
+
 ```
 sudo apt install ffmpeg
-```  
-For Mac:  
+```
+
+    For Mac:  
+
 ```
 brew install ffmpeg
 ```   
