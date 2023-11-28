@@ -22,7 +22,7 @@ The link to **Project 3 Rubrics scorecard** README.md is [here](https://github.c
 ---
 C.E.L.T. is a versatile tool that can perform sentiment analysis on different types of data, including text, audio, reviews, and news articles. Sentiment analysis is one of the fastest-growing research areas in computer science, making it challenging to keep track of all the activities in the area. In our project, we aim to achieve our goal of accurately predicting a user's sentiment by analyzing the data provided using different types of input data.
 
-[![sentiment](https://github.com/amit-99/SE_Project2/blob/master/sentimental_analysis/realworld/static/images/sentiment_3.png)](https://youtu.be/FMuVNTV_j8U)
+[![sentiment](https://github.com/amit-99/SE_Project2/blob/master/sentimental_analysis/realworld/static/images/sentiment_4.png)](https://youtu.be/FMuVNTV_j8U)
 
 ---
 
