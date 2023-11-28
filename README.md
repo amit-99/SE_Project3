@@ -104,19 +104,19 @@ pip install -r requirements.txt
 ```
 4. Install ffmpeg:  
 
-    For Windows:
+For Windows:
 
 ```
 winget install ffmpeg
 ```
 
-    For Linux (Ubuntu):  
+For Linux (Ubuntu):  
 
 ```
 sudo apt install ffmpeg
 ```
 
-    For Mac:  
+For Mac:  
 
 ```
 brew install ffmpeg
