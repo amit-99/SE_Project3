@@ -1,5 +1,8 @@
 # C.E.L.T: The Sentimental Analyser
 ## Software Engineering Project for CSC 510
+Link to Project Rubrics scorecard README.md is [here](https://github.com/amit-99/SE_Project3/blob/master/proj3/README.md)
+
+---
 
 [![DOI](https://zenodo.org/badge/295188611.svg)](https://zenodo.org/badge/latestdoi/295188611)
 [![GitHub Release](https://img.shields.io/github/release/amit-99/SE_Project3)](https://github.com/amit-99/SE_Project3/releases)
@@ -125,10 +128,10 @@ python .\sentimental_analysis\manage.py runserver
 ### Usage
 
 <a name="usecases"></a>
-- Start the django server to get to the homepage
+- Start the Django server to get to the homepage
 ![First](https://github.com/amit-99/SE_Project3/blob/master/assets/gifs/SEProj3_1.gif)
 
-- Amazon Product sentiment Analysis
+- Amazon Product Sentiment Analysis
 ![second](https://github.com/amit-99/SE_Project3/blob/master/assets/gifs/SEProj3_2.gif)
 
 - News Sentiment Analysis
@@ -158,13 +161,13 @@ python .\sentimental_analysis\manage.py runserver
 ☑️  Documentation Improvement for reflecting project's value accurately<br>
 ☑️  Addition of Builds and Workflows for better development activities<br>
 ☑️  Unit Tests were written and Test Coverage was improved<br>
-☑️  Public facing webpage to get feedbacks, Raise and handle issues, Discuss & Grow with enthusiasts and supportive community<br>  
+☑️  Public facing webpage to get feedback, Raise and handle issues, Discuss and Grow with enthusiasts and supportive community<br>  
 
 ### Future Scope
 - [ ] Implement User Authentication to store the history of each User
 - [ ] Recommendation System based on Product Analysis Results 
 - [ ] Enhance the Product Analysis by considering the number of users rated for each Product!
-- [ ] Extend the Sentiment Analysis to Facebook, Twitter, LinkedIn Posts
+- [ ] Extend the Sentiment Analysis to Facebook, Twitter, and LinkedIn Posts
 
 ---  
 <a name="casestudy"></a>
