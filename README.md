@@ -1,6 +1,6 @@
 # C.E.L.T: The Sentimental Analyser
 ## Software Engineering Project for CSC 510
-Link to Project Rubrics scorecard README.md is [here](https://github.com/amit-99/SE_Project3/blob/master/proj3/README.md)
+The link to **Project 3 Rubrics scorecard** README.md is [here](https://github.com/amit-99/SE_Project3/blob/master/proj3/README.md)
 
 ---
 
@@ -185,7 +185,7 @@ To Contribute to our application, please refer to [CONTRIBUTING.md](https://gith
 - Want to share your feedback or raise any issue [click here](https://noteforms.com/forms/query-form-i4mw2s)
 - Need instant help? discuss over community chat to get help from other community members
 - Join our mailing list for regular updates
-- Join our discord forum for updates or support or discussions. [Join Here!](https://discord.gg/WsDzsyB2X)
+- Join our discord forum for updates or support or discussions. [Join Here!](https://discord.gg/39aMBbWk6W)
 - Or just want to be part of our journey and get to know more about the C.E.L.T and its team
 
 **Visit our web page to be part of [C.E.L.T. community](https://factual-squash-083.notion.site/C-E-L-T-The-Sentiment-Analyzer-c71e9ace2c684b94b75fb9414e7fee75?pvs=4)**
