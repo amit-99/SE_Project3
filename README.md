@@ -1,5 +1,5 @@
-# C.E.L.T: The Sentimental Analyser
-## Software Engineering Project for CSC 510
+# C.E.L.T: The Sentimental Analyzer
+## Software Engineering Project 3 for CSC 510
 The link to **Project 3 Rubrics scorecard** README.md is [here](https://github.com/amit-99/SE_Project3/blob/master/proj3/README.md)
 
 ---
@@ -16,13 +16,12 @@ The link to **Project 3 Rubrics scorecard** README.md is [here](https://github.c
 ![GitHub language count](https://img.shields.io/github/languages/count/amit-99/SE_Project3)
 ![Lines of code](https://tokei.rs/b1/github/amit-99/SE_Project3)
 [![GitHub-size](https://img.shields.io/github/languages/code-size/amit-99/SE_Project3)](https://github.com/amit-99/SE_Project3)
-[![codecov](https://codecov.io/gh/lyonva/ClassMateBot/branch/master/graph/badge.svg)](https://app.codecov.io/gh/amit-99/SE_Project2)
 [![codecov](https://codecov.io/gh/usmanwardag/dollar_bot/branch/main/graph/badge.svg?token=PYAWX95R67)](https://codecov.io/gh/usmanwardag/dollar_bot)
 
 ---
 C.E.L.T. is a versatile tool that can perform sentiment analysis on different types of data, including text, audio, reviews, and news articles. Sentiment analysis is one of the fastest-growing research areas in computer science, making it challenging to keep track of all the activities in the area. In our project, we aim to achieve our goal of accurately predicting a user's sentiment by analyzing the data provided using different types of input data.
 
-[![sentiment](https://github.com/amit-99/SE_Project3/blob/master/sentimental_analysis/realworld/static/images/sentiment_4.png)](https://youtu.be/FMuVNTV_j8U)
+[![sentiment](https://github.com/amit-99/SE_Project3/blob/master/sentimental_analysis/realworld/static/images/sentiment_4.png)](https://youtu.be/BNQOso0zCNc)
 
 ---
 
