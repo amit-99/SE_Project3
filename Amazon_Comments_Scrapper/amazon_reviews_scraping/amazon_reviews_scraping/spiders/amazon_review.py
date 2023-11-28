@@ -88,8 +88,6 @@ class ReviewsSpider(scrapy.Spider):
             for i, text in enumerate(review_text):
                 review_text[i] = text.strip('\n').strip('\r').strip('\t').strip()
             item['Review'] = '\n'.join(review_text)
-
-
             yield item
 
         next_page = response.xpath('//a[contains(text(),"Next page")]/@href').get()
