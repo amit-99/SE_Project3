@@ -1,466 +1,213 @@
- 
+Automated Learning and Data Analysis
 
- 
+Project Reports Guidelines
 
- 
+Dr. Min Chi
 
- 
+Department of Computer Science
+North Carolina State University
 
- 
+Fall 2023
 
- 
+Course Project Guidelines
 
- 
+Your class project is an opportunity for you to explore an interesting data mining problem of your
+choice in the context of a real-world data set. Below, you will ﬁnd some project ideas, but the best
+idea would be to combine data mining algorithms with problems in your own research interest.
+Your class project must be about new things you have done this semester; you can’t use results you
+have developed in previous semesters or in other classes.
 
- 
+Projects can be done in teams of three to four students or individually. For a four-person
+group, group members are responsible for dividing up the work equally and making sure that each
+member contributes. For each project, the TAs will be your a project consultant/mentor. The ﬁnal
+responsibility to deﬁne and execute an interesting piece of work is yours. You are strongly urged
+to consult the TAs or the instructor early on if your project will rely purely on simulated data or if
+you intend to do a learning theory-related project.
 
- 
+Your project will be worth 33% of your ﬁnal class grade, and will have 4 deliverable:
+• Proposal, Due Date: Sept 13th at 11:45PM: 1 page (1%)
+• Midterm Report, Due Date: Oct 18th at 11:45 PM: 4-5 pages (2%)
+• Project Presentation Slides (Date: Nov 26th at 11:45PM)
+• Project Presentation (Date: Nov 27- Dec 4th Class Time)(10%)
+• Project Final Report (Date: Dec 5th at 11:45PM): 8 pages (20%)
+Note that all write-ups in the form of a NIPS paper: (Link here to the latex template). If you
+are not familiar with latex, please get familiar with it because the latex format is becoming the only
+template accepted by many conferences. The page limits are strict! Papers over the limit will not
+be considered. Each deliverable of your project will be evaluated based on several factors:
 
- 
+• The novelty of the project ideas and applications. The groups are encouraged to come up
+with original ideas and novel applications for the projects. A project with new ideas (algo-
+rithms, methods, theory) on data mining or new, interesting applications of existing algo-
+rithms is scored higher than a project without many new ideas/applications.
 
- 
+• The extensiveness of the study and experiments. A project that produces a more intelli-
+gent system by combining several ML techniques together, a project that involves extensive
+experiments and thorough analysis of the experimental results, or a project that nicely incor-
+porates various real-world applications, are scored higher.
 
- 
+1
 
- 
+• The writing style and the clarity of the written paper.
 
- 
+Project Proposal (Due Date: Sept 13th.)
 
- 
+A list of suggested projects and data sets is posted below. Read the list carefully. You are encour-
+aged to use one of the suggested data sets because we know that they have been successfully used
+for data mining and machine learning in the past. If you prefer to use a different data set, we will
+consider your proposal, but you must have access to this data already, and present a clear proposal
+for what you would do with it.
 
- 
+Page limit: Proposals should be one page maximum.
+Suggest to include the following information:
+• Project title
+• Data set
+• Project idea. This should be approximately two paragraphs.
+• Software you will need to write.
+• Papers to read. Include 1-3 relevant papers. You will probably want to read at least one of
 
- 
+them before submitting your proposal
 
- 
+• Teammate (if any) and work division. We expect projects done in a group to be more sub-
 
- 
+stantial than projects done individually.
 
- 
+• Midterm milestone: What will you complete by the Midway report? Experimental results of
 
- 
+some kind are expected here.
 
- 
+Midway Report (Due Date: Oct 18th)
 
-Nischal Badarinath Kashyap 
-nkashya@ncsu.edu​ | 919-527-8781 | linkedin.com/in/nischal-kashyap-a9937611b | ​github.com/NischalKash 
-__________________________________________________________________________________________________________ 
-Objective  
-Self-motivated student with a Master’s degree in Computer Science and a work experience of 2 Years as a Software Developer. I
-   
-will be seeking a Software Engineer role for a full time opportunity starting May 2021. 
-_____________________________________________________________________________________________________ 
-Education 
-North Carolina State University, Raleigh, USA
-Masters in Computer Science
-May 2021 | CGPA - 3.56 
-_____________________________________________________________________________________________ 
-Skills 
-Programming Languages​ - C, Embedded C, C++, Python, JAVA, UNIX Systems Programming, MySQL, HTML, CSS, JavaScript 
-Technologies​  -  Perforce, TeraTerm, DLT Analyser, CPAS, WinScp, Sodera, Ellysis, JIRA, Elvis, GitHub, Frontline, Crucible,  
-Framework​ - Bluetooth Specification, Harman Framework, Connectivity Framework, File in User Space Systems(FUSE), Django 
-Coursework​ - Algorithms, Operating Systems, Networks, Data Structures, Object Oriented Programming, Data Mining, Artificial  
-_______________________________________________________________________________________________________________ 
-Work Experience 
-Graduate Teaching Assistant - North Carolina State University
-● Teaching Assistant for the course BUS 443 Web Development for Business Applications. 
-● Assist professor in preparing the coursework for the semester and aid students by clarifying concepts and evaluating them. 
-       ​Oct 2017 - Jul 2019 
-Wipro Technologies - Harman International(Client)
-● Software Developer in the Connected Car division for Harman International Account for bluetooth media module. Skilled in
- 
- 
+This should be a 4-5 page short report in the form of a NIPS paper, and it serves as a checkpoint.
+It should consist of the same sections as your ﬁnal report (background, method, experiment, con-
+clusion, and references), with a few sections ‘under construction’. Speciﬁcally, the introduction
+and related work sections should be in their almost ﬁnal form; the section on the proposed method
+should be almost ﬁnished; the sections on the experiments and conclusions will have whatever
+results you have obtained, as well as ‘place-holders’ for the results you plan/hope to obtain.
 
-Visvesvaraya Technological University, Belgaum, India
-Bachelor of Engineering in Computer Science 
-May 2017 | First Class with Distinction
+Page limit: Midway report should be 4-5 pages (5 pages maximum).
+Grading scheme for the project report:
+• 70% for proposed method (should be almost ﬁnished) and experiments done so far
+• 25% for the design of upcoming experiments
+• 5% for the plan of activities (in an appendix, please show the old plan and the revised one,
 
-    Confluence, Buildcentral, GNU Debugger, mediactl, ioctl commands, keras, scikit learn, BootStrap 
+along with the activities of each group member)
 
-Intelligence, Database Management Systems, Software Engineering 
+2
 
-       ​Aug 2020 - Present 
+Project Presentation (Date: Nov 27-Dec 4th Class Time)
 
-middleware development and maintenance of Bluetooth profiles such as A2DP, HFP, BIP and AVRCP for higher end projects. 
+All project members should be present. The session will be open to everybody.
 
-● Debugged issues on AVRCP browsing, AVRCP commands, Events, Responses and Audio Buffering issues reported from clients.  
-● Resolved crash/memory issues using backtracking methods with the help of core dumps using GNU Debugger.  
-● Implemented a Bluetooth Feature Request - AVRCP STOP Command for Harman using mediactl. 
-       ​Jan 2016 - Jun 2016 
-BSNL - Project Trainee
-●
-_______________________________________________________________________________________________________________ 
-Projects 
-● Connection - Python, Django Framework, JavaScript, HTML, CSS, SQLite
+Project Final Report (Date: Dec 5th)
 
-Implemented an algorithm for User ID automation in Python which required mapping between the user and the port assigned to. 
+See separate documents
 
- 
- 
+Project Suggestions
 
- 
+Here are some project ideas and datasets for this year:
 
- 
+kaggle.com
+NBA statistics data
+Click here to download the dataset: contains 2004-2005 NBA and ABA stats for:
 
- 
+• Player regular season stats
+• Player regular season career totals
+• Player playoff stats
+• Player playoff career totals
+• Player allstar game stats
+• Team regular season stats
+• Complete draft history
+• coaches season.txt: nba coaching records by season
+• coaches career.txt: nba career coaching records
+• Currently all of the regular season
 
- 
+Project idea: * outlier detection on the players; ﬁnd out who are the outstanding players. *
 
- 
+predict the game outcome.
 
- 
+3
 
- 
+Netﬂix Prize Dataset
+The Netﬂix Prize data set gives 100 million records of the form ”user X rated movie Y a 4.0 on
+2/12/05”. The data is available: here Netﬂix Prize and KDD-2007.
 
- 
+Project idea:
 
- 
+1. Can you predict the rating a user will give on a movie from the movies that user has rated in
 
- 
+the past, as well as the ratings similar users have given similar movies?
 
- 
+2. Can you discover clusters of similar movies or users?
 
- 
+3. Can you predict which users rated which movies in 2006? In other words, your task is
+to predict the probability that each pair was rated in 2006. Note that the actual rating is
+irrelevant, and we just want whether the movie was rated by that user sometime in 2006.
+The date in 2006 when the rating was given is also irrelevant. The test data can be found at
+this website.
 
- 
+Enron E-mail Dataset
+The Enron E-mail data set contains about 500,000 e-mails from about 150 users.
 
- 
+The data set is available here
+Project ideas: * Can you classify the text of an e-mail message to decide who sent it?
 
- 
+Precipitation data
+This dataset has includes 45 years of daily precipitation data from the Northwest of the US:
 
- 
+Download Dataset:
+Project ideas: Weather prediction: Learn a probabilistic model to predict rain levels. Sensor
 
- 
+selection: Where should you place the sensor to best predict rain?
 
- 
+Image Segmentation Dataset
+The goal is to segment images in a meaningful way. Berkeley collected three hundred images and
+paid students to hand-segment each one (usually each image has multiple hand-segmentations).
+Two hundred of these images are training images, and the remaining 100 are test images. The
+dataset includes code for reading the images and ground-truth labels, computing the benchmark
+scores, and some other utility functions. It also includes code for a segmentation example. This
+dataset is new and the problem is unsolved, so there is a chance that you could come up with the
+leading algorithm for your project.
 
-Created a Web based Application with User Interface. The users upload their family members as objects onto the website. On a broad
- 
- 
-scale with abundant data, the application will find out whether members are connected using tree search methods. 
+Download Dataset
 
-   
+WebKB
+This dataset contains webpages from 4 universities, labeled with whether they are professor, stu-
+dent, project, or other pages.
 
- 
+Download Dataset
 
- 
+4
 
- 
+Project ideas: * Learning classiﬁers to predict the type of webpage from the text. * Can you
+improve accuracy by exploiting correlations between pages that point to each other using graphical
+models?
 
- 
+Email Annotation
+The datasets provided below are sets of emails. The goal is to identify which parts of the email refer
+to a person name. This task is an example of the general problem area of Information Extraction.
 
- 
+Download Dataset
+Project Ideas: * Model the task as a Sequential Labeling problem, where each email is a se-
+quence of tokens, and each token can have either a label of ”person-name” or ”not-a-person-name”.
 
- 
+Object Recognition
+The Caltech 256 dataset contains images of 256 object categories taken at varying orientations,
+varying lighting conditions, and with different backgrounds.
 
- 
+Download Dataset
+Project ideas: * You can try to create an object recognition system which can identify which ob-
+ject category is the best match for a given test image. * Apply clustering to learn object categories
+without supervision.
 
- 
+More data
+There are many other datasets out there. UC Irvine has a repository that could be useful for you
+project:
 
- 
+http://www.ics.uci.edu/ mlearn/MLRepository.html
+Kaggle Competitions: https://www.kaggle.com/
+Sam Roweis also has a link to several datasets out there:
+http://www.cs.toronto.edu/ roweis/data.html
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-● Pokemon​ ​Battle - Python(Socket Programming) 
-
- 
-
-A pokemon game implemented using socket programming with two trainers able to battle out each other by selecting pokemons from
- 
-the given roster. The game's implementation is in the initial stage with the backend logic being coded. 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-● Database Management Systems - JAVA, MySQLand JDBC
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Designed a database for an online library system to make book transactions and receive orders from distributors. The application level
- 
-programming was written in JAVA while MySQL was used to perform queries on the database internally. 
-
-● Arrhythmia Classifier - Python, KNN K FoldCV, Random Forests  
- 
-
-Developed a K Fold Cross Validation KNN algorithm from scratch to classify the arrhythmia dataset using major attributes. This was
- 
- 
-part of the course project and the algorithm obtained an efficiency of 68% in classifying the right data points. 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-● United States Path Routing - Python
-
- 
- 
-
- 
-
- 
-
- 
-
- 
-
-A Depth First Search, A* and Recursive Best First Search algorithms were implemented to find the best path between a source and a
-   
-destination in a map dataset provided by the instructor. 
-
-   
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-● Data Analytics - Python
- 
-
- 
-
- 
-
-Developed an AI model based on Bloom’s Taxonomy that was capable of converting a prolonged lecture video to a short summary
- 
- 
-video. A user defined word set was initially defined and data analysis was performed using NLP and Google API’s. 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-● Security and Robotics  - C, Embedded C, Python and MySQL(Socket Programming) 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-The project was developed to have multiple robots perform serial verification and authentication of users while being autonomous.
- 
-This was intended to be a prototype to a larger scale project. The project was recommended for copyrights. 
- 
- 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-_________________________________________________________________________________________________________ 
-Activities 
-● Athletics 
-● Leadership 
-● Volunteer
-● Academics
-
-Represented North Carolina State University’s Cricket Team. School and College Level Volleyball Player. 
-Marketing lead for College Fest Semaphore 2015. Leader of fest promotion teams marketing at various colleges. 
-
-Event Organizer at Semaphore 2014 and 2015. Women's Day Host at Wipro Technologies for March 2018. 
-
-10th Rank in Math Talent Exam for Bangalore. College Topper in Operational Research Course. 
+5
 
 
